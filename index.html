@@ -4,24 +4,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords"
+        content="Juntos Seguimos Creciendo, Juventino Rosas, Serafin Prieto Alvarez, Presidencia Municipal, Gobierno Santa Cruz, Becas" />
+    <meta name="description" content="Gobierno Municipal de Santa Cruz de Juventino Rosas, Juntos Hacemos el Cambio" />
+    <meta name="author" content="Presidencia Municipal de Sta Cruz de Juventino Rosas" />
+    <meta property="og:title" content="Presidencia Municipal de Sta Cruz de Juventino Rosas" />
+    <meta property="og:url" content="www.juventinorosas.gob.mx/" />
+    <meta property="og:site_name" content="Presidencia Municipal de Santa Cruz de Juventino Rosas" />
+    <meta property="og:type" content="blog" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Solicitudes de paquetes Escolares</title>
+    <title>Solicitudes de Paquetes de Utiles Escolares</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row header">
-            <div class="col-12">Cabecera de la pagina</div>
-        </div>
-        <div class="row main">
-            <div class="col-12">Aqui va el contenido</div>
-        </div>
-        <div class="row footer">
-            <div class="col-12">Pie de la pagina</div>
+    <!--Header ////////////////////////////////////////////////////////////-->
+    <div class="row header">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFCB00;">
+                <!-- Navbar content ///////////////////////////////// -->
+                <a class="navbar-brand" href="index.php">
+                    <div id="logo-nav"><img src="images/logo.png" alt="Logo Administracion 2018-2021"></div>
+                    <h1 class="text-hide" style="width: 50px; height: 50px;">Santa Cruz de Juventino Rosas</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Gobierno
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #FFCB00;">
+                                <a href="transparencia/fracciones/29/PlanMunicipalDesarrollo20162035.pdf"
+                                    class="dropdown-item" target="_blank">Plan Municipal de Desarrollo</a>
+                                <a href="transparencia/fracciones/29/ProgramaGobierno20152018.pdf" class="dropdown-item"
+                                    target="_blank">Programa de Gobierno</a>
+                                <a href="transparencia/fracciones/29/PMDUOET.pdf" class="dropdown-item"
+                                    target="_blank">PMDUOET</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Conoce Santa Cruz
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #FFCB00;">
+                                <a href="juventino/localizacion.php" class="dropdown-item">Localizacón y Medio</a>
+                                <a href="juventino/topominia.php" class="dropdown-item">Topominia</a>
+                                <a href="juventino/nomCategorias.php" class="dropdown-item">Nombres y Categorias</a>
+                                <a href="juventino/escudo.php" class="dropdown-item">Escudo Municipal</a>
+                                <a href="juventino/historia.php" class="dropdown-item">Historia</a>
+                                <a href="juventino/efemerides.php" class="dropdown-item">Efemérides</a>
+                                <a href="juventino/alcaldes.php" class="dropdown-item">Alcaldes</a>
+                                <a href="juventino/cultura.php" class="dropdown-item">Cultura</a>
+                                <a href="juventino/fuentes.php" class="dropdown-item">Fuentes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="transparencia/fraccion20.php">Trámites</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="transparencia/" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Transparencia
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #FFCB00;">
+                                <a href="transparencia/informacion-publica.php" class="dropdown-item">Información
+                                    Pública</a>
+                                <a href="transparencia/tesoreria.php" class="dropdown-item">Información Financiera</a>
+                                <a href="transparencia/iafed.php" class="dropdown-item">Aportaciones Federales</a>
+                                <a href="transparencia/tproactiva.php" class="dropdown-item">Transparencia Proactiva</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="mapa.php" class="linkNegro"><span class="icon-flow-tree"></span> Mapa del Sitio</a>
+                    <form class="form-inline my-2 my-lg-0">
+                        <!--<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>-->
+
+                        <!--Buscador de google -->
+                        <script>
+                            (function () {
+                                var cx = '001474306273621265874:chcljsykr3w';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:search></gcse:search>
+                        <!--fin Buscador de google -->
+                    </form>
+                </div>
+                <!--fin Navbar content -->
+            </nav>
         </div>
     </div>
+    <!--fin Header ////////////////////////////////////////////////////////////-->
+
+    <!--Contenido de la pagina ///////////////////////////////////////////////-->
+    <div class="container">
+        <div class="row main">
+            <br><br><br>
+            <div class="col-12">
+                <h1>Coordinación  de Educación</h1>
+                <div class="row">
+                <div class="col-6 col-xs-12"><a href="utiles.html">Solicitud de Paquete de Utiles Escolares</a></div>
+                <div class="col-6 col-xs-12"><a href="becas.html">Solicitud de Becas Monetarias Nivel Media Superior y
+                        Superior</a></div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Informes al telefono 412 157 8040 Ext 185. <br>
+                            Correo electrónico: educacion@juventinorosas.gob.mx <br>
+                            Horario por contingencia Sanitaria: 9:00 am - 2:00 pm
+                        </p>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <!--fin Contenido de la pagina ///////////////////////////////////////////////-->
+
+
+    <!-- Footer /////////////////////////////////////////////// -->
+    <div class="row footer">
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3 text-left margen">
+                        <h5>Transparencia</h5>
+                        <ul>
+                            <li><a href="descentralizados/dif/informacion-publica.php" class="telefono">DIF</a></li>
+                            <li><a href="descentralizados/comude/informacion-publica.php" class="telefono">COMUDE</a>
+                            </li>
+                            <li><a href="descentralizados/cmapaj/informacion-publica.php" class="telefono">CMAPAJ</a>
+                            </li>
+                            <li><a href="descentralizados/imuvi/informacion-publica.php" class="telefono">IMUVI</a>
+                            </li>
+                            <li><a href="descentralizados/cultura/informacion-publica.php" class="telefono">Casa de
+                                    la Cultura</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-3 text-left margen">
+                        <h5>Más Visto</h5>
+                        <ul>
+                            <li><a href="transparencia/fraccion1.php" class="telefono">Leyes y Reglamentos</a></li>
+                            <li><a href="transparencia/fraccion20.php" class="telefono">Trámites</a></li>
+                            <li><a href="transparencia/index.php" class="telefono">Transparencia</a></li>
+                            <li><a href="#" class="telefono">Turismo</a></li>
+                            <li><a href="directorio/telefonos.php" class="telefono">Directorio Telefónico</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-6 margen">
+                        Presidencia Municipal de Santa Cruz de Juventino Rosas, Guanajuato. <br>
+                        <span class="negrita"><span class="icon-location-pin"></span> Dirección:</span> Hidalgo 106,
+                        Zona Centro, Juventino Rosas, Gto. <br />
+                        <span class="negrita"><span class="icon-hour-glass"></span> Horario: </span> Lunes a Viernes
+                        en horario 8:30 a.m. - 4:30 p.m. <br />
+                        <span class="negrita"><span class="icon-phone"></span> Teléfono: </span> <a
+                            href="tel:+524121578040" class="telefono">(412) 157 80 40</a> <br>
+                        <span class="negrita"><span class="icon-box"></span> Código Postal: </span> 38240
+                        <p class="footDR">© 2016 Todos los Derechos Reservados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-lg-12  text-center">
+                    <ul>
+                        <li><a href="mapa.php" class="telefono">Mapa del Sitio</a></li>
+                        <li><a href="transparencia/archivos/avisoPrivacidadIntegral.pdf" class="telefono"
+                                target="_blank"> Aviso de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--fin Footer Content ///////////////////////////////////// -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myModal').modal('show')
+        });
+    </script>
+    <!--<script src="js/jquery.js"></script>    
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>-->
 </body>
 
 </html>
