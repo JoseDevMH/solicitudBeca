@@ -26,98 +26,38 @@
     <!--Header ////////////////////////////////////////////////////////////-->
     <div class="row header">
         <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFCB00;">
-                <!-- Navbar content ///////////////////////////////// -->
-                <a class="navbar-brand" href="index.php">
-                    <div id="logo-nav"><img src="images/logo.png" alt="Logo Administracion 2018-2021"></div>
-                    <h1 class="text-hide" style="width: 50px; height: 50px;">Santa Cruz de Juventino Rosas</h1>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F3C923;">
+                <a class="navbar-brand" href="https://juventinorosas.gob.mx" target="_self">
+                    <img src="images/logo.png" width="80" height="50" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Gobierno
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
-                                style="background-color: #FFCB00;">
-                                <a href="transparencia/fracciones/29/PlanMunicipalDesarrollo20162035.pdf"
-                                    class="dropdown-item" target="_blank">Plan Municipal de Desarrollo</a>
-                                <a href="transparencia/fracciones/29/ProgramaGobierno20152018.pdf" class="dropdown-item"
-                                    target="_blank">Programa de Gobierno</a>
-                                <a href="transparencia/fracciones/29/PMDUOET.pdf" class="dropdown-item"
-                                    target="_blank">PMDUOET</a>
-
-                            </div>
-                        </li>
-
-                        <li class="nav-item active dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Conoce Santa Cruz
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
-                                style="background-color: #FFCB00;">
-                                <a href="juventino/localizacion.php" class="dropdown-item">Localizacón y Medio</a>
-                                <a href="juventino/topominia.php" class="dropdown-item">Topominia</a>
-                                <a href="juventino/nomCategorias.php" class="dropdown-item">Nombres y Categorias</a>
-                                <a href="juventino/escudo.php" class="dropdown-item">Escudo Municipal</a>
-                                <a href="juventino/historia.php" class="dropdown-item">Historia</a>
-                                <a href="juventino/efemerides.php" class="dropdown-item">Efemérides</a>
-                                <a href="juventino/alcaldes.php" class="dropdown-item">Alcaldes</a>
-                                <a href="juventino/cultura.php" class="dropdown-item">Cultura</a>
-                                <a href="juventino/fuentes.php" class="dropdown-item">Fuentes</a>
-                            </div>
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="transparencia/fraccion20.php">Trámites</a>
+                            <a class="nav-link" href="#">Features</a>
                         </li>
-                        <li class="nav-item active dropdown">
-                            <a class="nav-link dropdown-toggle" href="transparencia/" id="navbarDropdown" role="button"
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Transparencia
+                                Dropdown link
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
-                                style="background-color: #FFCB00;">
-                                <a href="transparencia/informacion-publica.php" class="dropdown-item">Información
-                                    Pública</a>
-                                <a href="transparencia/tesoreria.php" class="dropdown-item">Información Financiera</a>
-                                <a href="transparencia/iafed.php" class="dropdown-item">Aportaciones Federales</a>
-                                <a href="transparencia/tproactiva.php" class="dropdown-item">Transparencia Proactiva</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
                     </ul>
-                    <a href="mapa.php" class="linkNegro"><span class="icon-flow-tree"></span> Mapa del Sitio</a>
-                    <form class="form-inline my-2 my-lg-0">
-                        <!--<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>-->
-
-                        <!--Buscador de google -->
-                        <script>
-                            (function () {
-                                var cx = '001474306273621265874:chcljsykr3w';
-                                var gcse = document.createElement('script');
-                                gcse.type = 'text/javascript';
-                                gcse.async = true;
-                                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                                var s = document.getElementsByTagName('script')[0];
-                                s.parentNode.insertBefore(gcse, s);
-                            })();
-                        </script>
-                        <gcse:search></gcse:search>
-                        <!--fin Buscador de google -->
-                    </form>
                 </div>
-                <!--fin Navbar content -->
             </nav>
         </div>
     </div>
@@ -128,19 +68,25 @@
         <div class="row main">
             <br><br><br>
             <div class="col-12">
-                <h1>Coordinación  de Educación</h1>
+                <h1>Coordinación de Educación</h1>
                 <div class="row">
-                <div class="col-6 col-xs-12"><a href="utiles.html">Solicitud de Paquete de Utiles Escolares</a></div>
-                <div class="col-6 col-xs-12"><a href="becas.html">Solicitud de Becas Monetarias Nivel Media Superior y
-                        Superior</a></div>
+                    <div class="col-12 col-sm-6">
+                        <a class="btn btn-warning" href="utiles.html">Solicitud de Paquete de
+                            Utiles Escolares</a>
                     </div>
-                    <div class="row">
-                        <p>
-                            Informes al telefono 412 157 8040 Ext 185. <br>
-                            Correo electrónico: educacion@juventinorosas.gob.mx <br>
-                            Horario por contingencia Sanitaria: 9:00 am - 2:00 pm
-                        </p>
+                    <div class="col-12 col-sm-6">
+                        <a class="btn btn-warning" href="becas.html">Solicitud de Becas
+                            Monetarias Nivel Media Superior y
+                            Superior</a>
                     </div>
+                </div>
+                <div class="row">
+                    <p>
+                        Informes al telefono 412 157 8040 Ext 185. <br>
+                        Correo electrónico: educacion@juventinorosas.gob.mx <br>
+                        Horario por contingencia Sanitaria: 9:00 am - 2:00 pm
+                    </p>
+                </div>
             </div>
 
         </div>
