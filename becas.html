@@ -64,105 +64,285 @@
     <!--fin Header ////////////////////////////////////////////////////////////-->
 
     <!--Contenido de la pagina ///////////////////////////////////////////////-->
-    <div class="container">
-        <div class="row main">
-            <br><br><br>
-            <div class="col-12">
-                <h1>Coordinación de Educación</h1>
-                <h2>Solicitud de becas monetarias</h2>
-                <p>Niveles para los que aplica son: Mediasuperior y Superior</p>
-                <div class="row">
-                    <div class="col-12">
-                        <form action="" method="GET">
-                            <table border="2px">
-                        
-                                <tr><td><img src="">
-                        
-                                    <h2 align="center">COORDINACIÓN DE EDUCACIÓN</h2>
-                        
-                                    <table border="1px">
-                                        <tr><td >FOLIO</td></tr>
-                                        <tr><td>1</td><td>1</td><td>1</td></tr>
-                                    </table></td></tr>
-                        
-                            <tr><td align="center"><H2>INFORMACIÓN DEL ALUMNO</H2></td></tr>
-                        
-                                <tr><td>APELLIDO PATERNO<input type="text"/>
-                        
-                            APELLIDO MATERNO<input type="text"/>
-                        
-                            <tr><td>NOMBRE(S)<input type="text"/></td></tr><P>
-                        
-                                <tr><td>EDAD<input type="number"/>
-                        
-                            CURP<input type="text"/></td></tr><P>
-                        
-                                <tr><td>DOMICILIO(calle y número interior y exterior)</td></tr><p>
-                        
-                                    <tr><td>CORREO ELECTRONICO: <Input type="email"/></td></tr><p>
-                        
-                                        <tr><td>TELEFONO(S) <input type="tel"/></td></tr>
-                        
-                                            <tr><td><H2 align="center">INFORMACIÓN ESCOLAR</H2></td></tr>
-                        
-                                                <tr><td>NIVEL <input type="text"/>
-                        
-                                INGRESA AL <input type="text"/>
-                        
-                                PROMEDIO <input type="number"/></td></tr><P>
-                        
-                                    <tr><td>NOMBRE DE LA ESCUELA <input type="text"/></td></tr><p>
-                        
-                                        <tr><td>LOCALIDAD <input type="text"/>
-                        
-                                    TURNO: <input type="text"/></td></tr><P>
-                        
-                                        <tr><td><H2 align="center">INFORMACIÓN DEL PADRE, MADRE O TUTOR(A) O DE QUIEN APORTE EL INGRESO</H2></td></tr>
-                        
-                                            <tr><td>NOMBRE DEL PADRE <input type="text"/></td></tr><P>
-                        
-                                                <tr><td>DOMICILIO <input type="text"/>
-                        
-                            TELEFONO <input type="tel"/></td><tr/><P>
-                        
-                                <tr><td>LUGAR DONDE TRABAJA <input type="text"/>
-                        
-                                    <tr><td>INGRESO MENSUAL <input type="number"/></td><tr/><P>
-                        
-                                        <tr><td>NOMBRE DE LA MADRE <input type="text"/></td><tr/><P>
-                        
-                                            <tr><td>DIMICILIO <input type="text"/>
-                        
-                            TELEFONO <input type="tel"/></td></tr><P>
-                        
-                                <tr><td>LUGAR DE TRABAJO <input type="text"/>
-                        
-                            INGRESO MENSUAL <input type="text"/></td></tr><P>
-                        
-                                <tr><td><H2 align="center">QUIEN PROPORCIONA LOS DATOS</H2></td></tr>
-                        
-                                    <tr><td>PADRE <input type="text"/>
-                        
-                            MADRE <input type="text"/>
-                        
-                            TUTOR(A) <input type="text"/></td></tr><P>
-                        
-                                <tr><td><P>Por este conducto hago de su conocimiento que realicé los trámites para el Programa de Becas,
-                             los datos asentados son verídicos y los documentos entregados son auténticos. Autorizo a la administración
-                              Pública para que sean verificados a su entera satisfacción.</td></tr></P>
-                        
-                              <tr><td><h2 align="center">NOMBRE Y FIRMA DE QUIEN PROPORCIONA LA INFORMACIÓN</h2></td></tr>
-                        
-                                <tr><td>NOMBRE DEL RESPONSABLE DE RECABAR LA INFORMACIÓN <input type="text"/></td></tr><p> 
-                        
-                            </table>
-                        </form>
-                    </div>        
-                </div>
-            </div>
-
+    <div class="container mt-3 mb-3">
+    <form class="form" method="POST" action="">
+      <H2 class="text-center">INFORMACIÓN DEL ALUMNO</H2>
+  
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="priapellido">Primer Apellido:</label>
+            <input type="text" class="form-control" placeholder="primer apellido" id="priapellido">
+          </div>
         </div>
-    </div>
+        <div class="col-12 col-md-4">
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="segapellido">Segundo Apellido:</label>
+            <input type="text" class="form-control" placeholder="primer apellido" id="segapellido">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="nombrera">Nombre:</label>
+            <input type="text" class="form-control" placeholder="primer apellido" id="nombrera">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="edadA">Edad:</label>
+            <input type="text" class="form-control" id="edadA" placeholder="Escriba su edad" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="curp">CURP:</label>
+            <input type="text" class="form-control" id="curp" placeholder="CURP" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-12">
+          <label class="font-weight-bold text-uppercase" for="domicilioA">Domicilio:</label>
+          <input type="text" class="form-control" id="domicilioA" placeholder="Escriba el nombre de la calle" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label class="font-weight-bold text-uppercase" for="num_inA">Número Exterior:</label>
+          <input type="text" class="form-control" id="num_exA" placeholder="Número interior" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="font-weight-bold text-uppercase" for="num_exA">Número Interior:</label>
+          <input type="text" class="form-control" id="num_inA" placeholder="Número exterior" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label class="font-weight-bold text-uppercase" for="colA">Colonia:</label>
+          <input type="text" class="form-control" id="colA" placeholder="Nombre de la colonia" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="font-weight-bold text-uppercase" for="localA">Localidad:</label>
+          <input type="text" class="form-control" id="localA" placeholder="Nombre del municipio" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="font-weight-bold text-uppercase" for="email">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label class="font-weight-bold text-uppercase" for="telA">Teléfono</label>
+        <input type="text" class="form-control" id="telA" placeholder="Número telefónico personal" required>
+      </div>
+      <H2 align="center">Información Escolar:</H2>
+      <div class="form-group">
+        <label class="font-weight-bold text-uppercase" for="nombreEsc">Nombre De La Escuela:</label>
+        <input type="text" class="form-control" id="nombreEsc" placeholder="Nombre de la escuela" required>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label class="font-weight-bold text-uppercase" for="nivel">Nivel</label>
+          <input type="text" class="form-control" id="nivel" placeholder="Grado de estudio" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label class="font-weight-bold text-uppercase" for="grado">Ingresa Al:</label>
+          <input type="text" class="form-control" id="grado" placeholder="Grado de la escuela" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label class="font-weight-bold text-uppercase" for="promedio">Primedio:</label>
+          <input type="text" class="form-control" id="promedio" placeholder="Promedio actual" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label class="font-weight-bold text-uppercase" for="localE">Localidad:</label>
+          <input type="text" class="form-control" id="localE" placeholder="Nombre del municipio" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label class="font-weight-bold text-uppercase" for="turno">Turno:</label>
+          <select id="turno" class="form-control">
+            <option selected>Selecciona</option>
+            <option>Matutino</option>
+            <option>Vespertino</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+        <H2 align="center">INFORMACIÓN DEL PADRE, MADRE O TUTOR(A) O DE QUIEN APORTE EL INGRESO</H2>
+        <div class="form-group row col-12">
+          <label class="font-weight-bold text-uppercase" for="nombreP">Nombre Del Padre:</label>
+          <input type="text" class="form-control" id="nombreP" placeholder="Nombre completo" required>
+        </div>
+        <div class="form-group row col-12">
+          <label class="font-weight-bold text-uppercase" for="domilicioP">Domicilio:</label>
+          <input type="text" class="form-control" id="domilicioP" placeholder="Escriba el nombre de la calle" required>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="num_inP">Número Interior:</label>
+            <input type="text" class="form-control" id="num_inP" placeholder="Número interior" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="num_exP">Número Interior:</label>
+            <input type="text" class="form-control" id="num_exP" placeholder="Número exterior" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="colP">Colonia:</label>
+            <input type="text" class="form-control" id="colP" placeholder="Nombre de la colonia" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="localP">Localidad:</label>
+            <input type="text" class="form-control" id="localP" placeholder="Nombre del municipio" required>
+          </div>
+        </div>
+        <div class="form-group row col-12">
+          <label class="font-weight-bold text-uppercase" for="telP">Teléfono:</label>
+          <input type="text" class="form-control" id="telP" placeholder="Número telefónico personal" required>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="trabajoP">Lugar Donde Trabaja:</label>
+            <input type="text" class="form-control" id="trabajoP" placeholder="Nombre de la empresa" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="ingresoP">Ingreso Mensual</label>
+            <input type="text" class="form-control" id="ingresoP" placeholder="Cuanto gana al mes" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="font-weight-bold text-uppercase" for="nombreM">Nombre de la madre:</label>
+          <input type="text" class="form-control" id="nombreM" placeholder="Nombre completo" required>
+        </div>
+        <div class="form-group">
+          <label class="font-weight-bold text-uppercase" for="domicilioM">Domicilio:</label>
+          <input type="text" class="form-control" id="domicilioM" placeholder="Escriba el nombre de la calle" required>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="num_inM">Número Interior:</label>
+            <input type="text" class="form-control" id="num_inM" placeholder="Número interior" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="inputPassword4">Número Exterior:</label>
+            <input type="text" class="form-control" id="num_exM" placeholder="Número exterior" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="num_exM">Colonia:</label>
+            <input type="text" class="form-control" id="colM" placeholder="Nombre de la colonia" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="localM">Localidad:</label>
+            <input type="text" class="form-control" id="localM" placeholder="Nombre del municipio" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="font-weight-bold text-uppercase" for="telM">Teléfono:</label>
+          <input type="text" class="form-control" id="telM" placeholder="Número telefónico personal" required>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="trabajoM">Lugar Donde Trabaja:</label>
+            <input type="text" class="form-control" id="trabajoM" placeholder="Nombre de la empresa" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="ingresoM">Ingreso Mensual:</label>
+            <input type="text" class="form-control" id="ingresoM" placeholder="Cuanto gana al mes" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="font-weight-bold text-uppercase" for="nombreT">Nombre Del Tutor(a):</label>
+          <input type="text" class="form-control" id="nombreT" placeholder="Nombre completo" required>
+        </div>
+        <div class="form-group">
+          <label class="font-weight-bold text-uppercase" for="domicilioT">Domicilio:</label>
+          <input type="text" class="form-control" id="domicilioT" placeholder="Escriba el nombre de la calle" required>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="num_inT">Número Interior:</label>
+            <input type="text" class="form-control" id="num_inT" placeholder="Número inteior" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="num_exT">Número Exterior:</label>
+            <input type="text" class="form-control" id="num_exT" placeholder="Número exterior" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="colT">Colonia:</label>
+            <input type="text" class="form-control" id="colT" placeholder="Nombre de la colonia" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="localT">Localidad:</label>
+            <input type="text" class="form-control" id="localT" placeholder="Nombre del municipio" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="font-weight-bold text-uppercase" for="telT">Teléfono:</label>
+          <input type="text" class="form-control" id="telT" placeholder="Número telefónico personal" required>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="trabajoT">Lugar Donde Trabaja:</label>
+            <input type="text" class="form-control" id="trabajoT" placeholder="Nombre de la empresa" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="ingrosoT">Ingreso Mensual:</label>
+            <input type="text" class="form-control" id="ingrosoT" placeholder="Cuanto gana al mes" required>
+          </div>
+        </div>
+
+        <div class="form-group row col-md-4">
+          <label class="font-weight-bold text-uppercase" for="datoF">¿Quién Proporciona Los Datos?</label>
+          <select id="datoF" class="form-control">
+            <option selected>Selecciona</option>
+            <option>PADRE</option>
+            <option>MADRE</option>
+            <option>TUTOR(A)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="font-weight-bold text-uppercase" for="nombre">Nombre De Quien Proporciona Los Datos:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+        </div>
+        <hr>
+        <h2 align="center">ADJUNTAR LOS SIGUIENTES ARCHIVOS</h2>
+        <form>
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="curp">CURP Del Estudiante:</label>
+            <input type="file" class="form-control-file" id="curp">
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses de antigüedad)</label>
+            <input type="file" class="form-control-file" id="domicilio">
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="boleta">Boleta o constancia con promedio emitida por el sistema educativo donde compruebe que el
+              alumno está inscrito</label>
+            <input type="file" class="form-control-file" id="boleta">
+          </div>
+        </form>
+        <div class="row justify-content-center">
+          <button type="submit" class="col-3 btn btn-primary btn-block">Enviar</button>
+        </div>
+      </form>
+  </div>
     <!--fin Contenido de la pagina ///////////////////////////////////////////////-->
 
 
