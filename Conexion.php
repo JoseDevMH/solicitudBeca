@@ -6,7 +6,7 @@ $password = "estaeslabolsadeempleo";*/
 
 
 $hostname = "localhost";
-$database = "bolsaempleo";
+$database = "becas";
 $username = "root";
 $password = "";
 
@@ -16,7 +16,7 @@ class Conexion {
 
   public function Conexion(){
       try{
-        $this->conexionDB = new PDO('mysql:host=localhost; dbname=bolsaempleo', 'root', '');
+        $this->conexionDB = new PDO('mysql:host=localhost; dbname=becas', 'root', '');
         $this->conexionDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->conexionDB->exec("SET CHARACTER SET UTF8");
         return $this->conexionDB;
