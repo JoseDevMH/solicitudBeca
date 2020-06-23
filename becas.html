@@ -176,12 +176,15 @@
                 name="LocalidaddelaEscuelaDelEstudiante">
             </div>
             <div class="form-group col-md-4">
-              <label class="font-weight-bold text-uppercase" for="turno">Turno:</label>
-              <select id="turno" class="form-control" name="TurnoDelEstudiante">
-                <option selected>Selecciona</option>
-                <option>Matutino</option>
-                <option>Vespertino</option>
-              </select>
+              <label class="font-weight-bold text-uppercase" for="localE">Turno:</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="M">
+                <label class="form-check-label" for="inlineRadio1">Matutino</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="V">
+                <label class="form-check-label" for="inlineRadio2">Vespertino</label>
+              </div>              
             </div>
           </div>
         </div>
@@ -281,9 +284,30 @@
                 name="TelefonoDelEstudiante" required>
             </div>
           </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label class="font-weight-bold text-uppercase" for="localE">¿Quién esta proporcinando la Información?:</label>
+              <br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="P">
+                <label class="form-check-label" for="inlineRadio1">Padre</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="M">
+                <label class="form-check-label" for="inlineRadio2">Madre</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="T">
+                <label class="form-check-label" for="inlineRadio2">Tutor</label>
+              </div>          
+            </div>
+            <div class="form-group col-md-6">
+              nombre de quien da la Información:
+            </div>
+          </div>
         </div>
       </div>
-      
+
       <hr>
       </hr>
 
@@ -293,7 +317,7 @@
         </div>
         <div class="card-body">
           <div class="form-group">
-            <label class="font-weight-bold text-uppercase" for="curp">CURP Del Estudiante:</label>
+            <label class="font-weight-bold text-uppercase" for="curp">CURP del Estudiante:</label>
             <input type="file" class="form-control-file" id="curp">
           </div>
 
@@ -317,7 +341,7 @@
       <br><br>
       <div class="row">
         <div class="col-12 justify-content-center">
-          <button type="submit" class="col-12 btn btn-primary btn-block">Enviar Solitud</button>
+          <button type="submit" class="col-12 btn btn-warning btn-block">Enviar Solitud</button>
         </div>
       </div>
     </form>
