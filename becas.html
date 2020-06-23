@@ -67,7 +67,7 @@
     <div class="container mt-3 mb-3">
         <div class="row">
       <div class="col-12 col-md-4">
-        <img src="/img/logo.png" alt="Logo">
+        <img src="/images/logo.png" alt="Logo">
       </div>
       <div class="col-12" col-md-4>
         <h2 class="text-center">COORDINACIÓN DE EDUCACIÓN <P>
@@ -81,20 +81,20 @@
       <div class="row">
         <div class="col-12 col-md-4">
           <div class="form-group">
-            <label class="font-weight-bold text-uppercase" for="priapellido">Primer Apellido:</label>
-            <input type="text" class="form-control" placeholder="primer apellido" id="priapellido">
+            <label class="font-weight-bold text-uppercase" for="priApellido">Primer Apellido:</label>
+            <input type="text" class="form-control" placeholder="Primer Apellido" id="priApellido" name="primerApellidoDelEstudiante" required>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="form-group">
-            <label class="font-weight-bold text-uppercase" for="segapellido">Segundo Apellido:</label>
-            <input type="text" class="form-control" placeholder="primer apellido" id="segapellido">
+            <label class="font-weight-bold text-uppercase" for="segApellido">Segundo Apellido:</label>
+            <input type="text" class="form-control" placeholder="Segundo Apellido" id="segApellido" name="segundoApellidoDelEstudiante" required>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="form-group">
-            <label class="font-weight-bold text-uppercase" for="nombrera">Nombre:</label>
-            <input type="text" class="form-control" placeholder="primer apellido" id="nombrera">
+            <label class="font-weight-bold text-uppercase" for="nombrerA">Nombre:</label>
+            <input type="text" class="form-control" placeholder="Nombre(s)" id="nombrerA" name="NombresDelEstudiante" required>
           </div>
         </div>
       </div>
@@ -103,13 +103,13 @@
         <div class="col-md-6">
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="edadA">Edad:</label>
-            <input type="text" class="form-control" id="edadA" placeholder="Escriba su edad" required>
+            <input type="text" class="form-control" id="edadA" placeholder="Cuantos años tienes" name="EdadDelEstudiante" required>
           </div>
         </div>
         <div class="col-md-6">
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="curp">CURP:</label>
-            <input type="text" class="form-control" id="curp" placeholder="CURP" required>
+            <input type="text" class="form-control" id="curp" placeholder="CURP" name="CurpDelEstudiante" required>
           </div>
         </div>
       </div>
@@ -117,66 +117,66 @@
       <div class="row">
         <div class="form-group col-12">
           <label class="font-weight-bold text-uppercase" for="domicilioA">Domicilio:</label>
-          <input type="text" class="form-control" id="domicilioA" placeholder="Escriba el nombre de la calle" required>
+          <input type="text" class="form-control" id="domicilioA" placeholder="Escriba su dirección" name="DomicilioDelEstudiante" required>
         </div>
       </div>
 
       <div class="row">
         <div class="form-group col-md-6">
-          <label class="font-weight-bold text-uppercase" for="num_inA">Número Exterior:</label>
-          <input type="text" class="form-control" id="num_exA" placeholder="Número interior" required>
+          <label class="font-weight-bold text-uppercase" for="num_exA">Número Exterior:</label>
+          <input type="text" class="form-control" id="num_exA" placeholder="Número Exterior" name="NumeroExteriorDelEstudiente">
         </div>
         <div class="form-group col-md-6">
-          <label class="font-weight-bold text-uppercase" for="num_exA">Número Interior:</label>
-          <input type="text" class="form-control" id="num_inA" placeholder="Número exterior" required>
+          <label class="font-weight-bold text-uppercase" for="num_inA">Número Interior:</label>
+          <input type="text" class="form-control" id="num_inA" placeholder="Número Interior" name="NumeroInteriorDelEstudiente">
         </div>
       </div>
       <div class="row">
         <div class="form-group col-md-6">
           <label class="font-weight-bold text-uppercase" for="colA">Colonia:</label>
-          <input type="text" class="form-control" id="colA" placeholder="Nombre de la colonia" required>
+          <input type="text" class="form-control" id="colA" placeholder="Nombre de la colonia" name="ColoniaDelEstudiante" required>
         </div>
         <div class="form-group col-md-6">
           <label class="font-weight-bold text-uppercase" for="localA">Localidad:</label>
-          <input type="text" class="form-control" id="localA" placeholder="Nombre del municipio" required>
+          <input type="text" class="form-control" id="localA" placeholder="Nombre del municipio" name="LocalidadDelEstudiante" required>
         </div>
       </div>
       <div class="form-group">
         <label class="font-weight-bold text-uppercase" for="email">Correo Electrónico:</label>
-        <input type="email" class="form-control" id="email" placeholder="Email" required>
+        <input type="email" class="form-control" id="email" placeholder="Email" name="EmailDelEstudiante" required>
       </div>
       <div class="form-group">
         <label class="font-weight-bold text-uppercase" for="telA">Teléfono</label>
-        <input type="text" class="form-control" id="telA" placeholder="Número telefónico personal" required>
+        <input type="text" class="form-control" id="telA" placeholder="Número telefónico" name="TelefonoDelEstudiante" required>
       </div>
       <H2 align="center">Información Escolar:</H2>
       <div class="form-group">
         <label class="font-weight-bold text-uppercase" for="nombreEsc">Nombre De La Escuela:</label>
-        <input type="text" class="form-control" id="nombreEsc" placeholder="Nombre de la escuela" required>
+        <input type="text" class="form-control" id="nombreEsc" placeholder="Nombre de la escuela" name="EscuelaDelEstudiante" required>
       </div>
       <div class="row">
         <div class="form-group col-md-4">
           <label class="font-weight-bold text-uppercase" for="nivel">Nivel</label>
-          <input type="text" class="form-control" id="nivel" placeholder="Grado de estudio" required>
+          <input type="text" class="form-control" id="nivel" placeholder="Nivel de estudio" name="NivelDelEstudiante" required>
         </div>
         <div class="form-group col-md-4">
           <label class="font-weight-bold text-uppercase" for="grado">Ingresa Al:</label>
-          <input type="text" class="form-control" id="grado" placeholder="Grado de la escuela" required>
+          <input type="text" class="form-control" id="grado" placeholder="Grado de la escuela" name="GradoDelEstudiante" required>
         </div>
         <div class="form-group col-md-4">
-          <label class="font-weight-bold text-uppercase" for="promedio">Primedio:</label>
-          <input type="text" class="form-control" id="promedio" placeholder="Promedio actual" required>
+          <label class="font-weight-bold text-uppercase" for="promedio">Promedio:</label>
+          <input type="text" class="form-control" id="promedio" placeholder="Promedio actual" name="PromedioDelEstudiante" required>
         </div>
       </div>
 
       <div class="row">
         <div class="form-group col-md-6">
           <label class="font-weight-bold text-uppercase" for="localE">Localidad:</label>
-          <input type="text" class="form-control" id="localE" placeholder="Nombre del municipio" required>
+          <input type="text" class="form-control" id="localE" placeholder="Nombre del municipio" name="LocalidaddelaEscuelaDelEstudiante">
         </div>
         <div class="form-group col-md-4">
           <label class="font-weight-bold text-uppercase" for="turno">Turno:</label>
-          <select id="turno" class="form-control">
+          <select id="turno" class="form-control" name="TurnoDelEstudiante">
             <option selected>Selecciona</option>
             <option>Matutino</option>
             <option>Vespertino</option>
@@ -187,135 +187,135 @@
         <H2 align="center">INFORMACIÓN DEL PADRE, MADRE O TUTOR(A) O DE QUIEN APORTE EL INGRESO</H2>
         <div class="form-group row col-12">
           <label class="font-weight-bold text-uppercase" for="nombreP">Nombre Del Padre:</label>
-          <input type="text" class="form-control" id="nombreP" placeholder="Nombre completo" required>
+          <input type="text" class="form-control" id="nombreP" placeholder="Nombre completo" name="PadreDelEstudiante" required>
         </div>
         <div class="form-group row col-12">
           <label class="font-weight-bold text-uppercase" for="domilicioP">Domicilio:</label>
-          <input type="text" class="form-control" id="domilicioP" placeholder="Escriba el nombre de la calle" required>
+          <input type="text" class="form-control" id="domilicioP" placeholder="Escriba su dirección" name="DomicilioDelPadreDelEstudiente" required>
         </div>
 
         <div class="row">
           <div class="form-group col-md-6">
-            <label class="font-weight-bold text-uppercase" for="num_inP">Número Interior:</label>
-            <input type="text" class="form-control" id="num_inP" placeholder="Número interior" required>
+            <label class="font-weight-bold text-uppercase" for="num_exP">Número Exterior:</label>
+            <input type="text" class="form-control" id="num_exP" placeholder="Número Exterior" name="NumeroInteriorDelPAdre">
           </div>
           <div class="form-group col-md-6">
-            <label class="font-weight-bold text-uppercase" for="num_exP">Número Interior:</label>
-            <input type="text" class="form-control" id="num_exP" placeholder="Número exterior" required>
+            <label class="font-weight-bold text-uppercase" for="num_inP">Número Interior:</label>
+            <input type="text" class="form-control" id="num_inP" placeholder="Número Interior" name="NumeroExteriorDelPadre">
           </div>
         </div>
         <div class="row">
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="colP">Colonia:</label>
-            <input type="text" class="form-control" id="colP" placeholder="Nombre de la colonia" required>
+            <input type="text" class="form-control" id="colP" placeholder="Nombre de la colonia" name="ColoniaDelPadre">
           </div>
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="localP">Localidad:</label>
-            <input type="text" class="form-control" id="localP" placeholder="Nombre del municipio" required>
+            <input type="text" class="form-control" id="localP" placeholder="Nombre del municipio" name="LocalidadDelPadre" required>
           </div>
         </div>
         <div class="form-group row col-12">
           <label class="font-weight-bold text-uppercase" for="telP">Teléfono:</label>
-          <input type="text" class="form-control" id="telP" placeholder="Número telefónico personal" required>
+          <input type="text" class="form-control" id="telP" placeholder="Número telefónico" name="TelefonoDelPadre" required>
         </div>
         <div class="row">
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="trabajoP">Lugar Donde Trabaja:</label>
-            <input type="text" class="form-control" id="trabajoP" placeholder="Nombre de la empresa" required>
+            <input type="text" class="form-control" id="trabajoP" placeholder="Nombre de la empresa" name="TrabajoDelPadre" required>
           </div>
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="ingresoP">Ingreso Mensual</label>
-            <input type="text" class="form-control" id="ingresoP" placeholder="Cuanto gana al mes" required>
+            <input type="text" class="form-control" id="ingresoP" placeholder="¿Cuánto gana al mes?" name="IngresosDelPadre" required>
           </div>
         </div>
         <div class="form-group">
           <label class="font-weight-bold text-uppercase" for="nombreM">Nombre de la madre:</label>
-          <input type="text" class="form-control" id="nombreM" placeholder="Nombre completo" required>
+          <input type="text" class="form-control" id="nombreM" placeholder="Nombre completo" name="MadreDelEstudiante" required>
         </div>
         <div class="form-group">
           <label class="font-weight-bold text-uppercase" for="domicilioM">Domicilio:</label>
-          <input type="text" class="form-control" id="domicilioM" placeholder="Escriba el nombre de la calle" required>
+          <input type="text" class="form-control" id="domicilioM" placeholder="Escriba su dirección" name="DomicilioDelaMadre" required>
         </div>
         <div class="row">
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold text-uppercase" for="num_exM">Número Exterior:</label>
+            <input type="text" class="form-control" id="num_exM" placeholder="Número Exterior" name="NumeroInteriorDelaMadre">
+          </div>
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="num_inM">Número Interior:</label>
-            <input type="text" class="form-control" id="num_inM" placeholder="Número interior" required>
-          </div>
-          <div class="form-group col-md-6">
-            <label class="font-weight-bold text-uppercase" for="inputPassword4">Número Exterior:</label>
-            <input type="text" class="form-control" id="num_exM" placeholder="Número exterior" required>
+            <input type="text" class="form-control" id="num_inM" placeholder="Número Interior" name="NumeroExteriorDelaMadre">
           </div>
         </div>
         <div class="row">
           <div class="form-group col-md-6">
-            <label class="font-weight-bold text-uppercase" for="num_exM">Colonia:</label>
-            <input type="text" class="form-control" id="colM" placeholder="Nombre de la colonia" required>
+            <label class="font-weight-bold text-uppercase" for="colM">Colonia:</label>
+            <input type="text" class="form-control" id="colM" placeholder="Nombre de la colonia" name="ColoniaDelaMadre" required>
           </div>
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="localM">Localidad:</label>
-            <input type="text" class="form-control" id="localM" placeholder="Nombre del municipio" required>
+            <input type="text" class="form-control" id="localM" placeholder="Nombre del municipio" name="LocalidadDelaMadre" required>
           </div>
         </div>
         <div class="form-group">
           <label class="font-weight-bold text-uppercase" for="telM">Teléfono:</label>
-          <input type="text" class="form-control" id="telM" placeholder="Número telefónico personal" required>
+          <input type="text" class="form-control" id="telM" placeholder="Número telefónico" name="TelefonoDelaMadre" required>
         </div>
         <div class="row">
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="trabajoM">Lugar Donde Trabaja:</label>
-            <input type="text" class="form-control" id="trabajoM" placeholder="Nombre de la empresa" required>
+            <input type="text" class="form-control" id="trabajoM" placeholder="Nombre de la empresa" name="TrabajoDelaMadre" required>
           </div>
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="ingresoM">Ingreso Mensual:</label>
-            <input type="text" class="form-control" id="ingresoM" placeholder="Cuanto gana al mes" required>
+            <input type="text" class="form-control" id="ingresoM" placeholder="¿Cuánto gana al mes?" name="IngresoDelaMadre" required>
           </div>
         </div>
         <div class="form-group">
           <label class="font-weight-bold text-uppercase" for="nombreT">Nombre Del Tutor(a):</label>
-          <input type="text" class="form-control" id="nombreT" placeholder="Nombre completo" required>
+          <input type="text" class="form-control" id="nombreT" placeholder="Nombre completo" name="TutorDelEstudiante" required>
         </div>
         <div class="form-group">
           <label class="font-weight-bold text-uppercase" for="domicilioT">Domicilio:</label>
-          <input type="text" class="form-control" id="domicilioT" placeholder="Escriba el nombre de la calle" required>
+          <input type="text" class="form-control" id="domicilioT" placeholder="Escriba su dirección" name="DomicilioDelTutor" required>
         </div>
         <div class="row">
           <div class="form-group col-md-6">
-            <label class="font-weight-bold text-uppercase" for="num_inT">Número Interior:</label>
-            <input type="text" class="form-control" id="num_inT" placeholder="Número inteior" required>
+            <label class="font-weight-bold text-uppercase" for="num_exT">Número Exterior:</label>
+            <input type="text" class="form-control" id="num_exT" placeholder="Número Exteior" name="NumeroInteriorDelTutor">
           </div>
           <div class="form-group col-md-6">
-            <label class="font-weight-bold text-uppercase" for="num_exT">Número Exterior:</label>
-            <input type="text" class="form-control" id="num_exT" placeholder="Número exterior" required>
+            <label class="font-weight-bold text-uppercase" for="num_inT">Número Interior:</label>
+            <input type="text" class="form-control" id="num_inT" placeholder="Número Interior" name="NumeroExteriorDelTutor">
           </div>
         </div>
         <div class="row">
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="colT">Colonia:</label>
-            <input type="text" class="form-control" id="colT" placeholder="Nombre de la colonia" required>
+            <input type="text" class="form-control" id="colT" placeholder="Nombre de la colonia" name="ColoniaDelTutor" required>
           </div>
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="localT">Localidad:</label>
-            <input type="text" class="form-control" id="localT" placeholder="Nombre del municipio" required>
+            <input type="text" class="form-control" id="localT" placeholder="Nombre del municipio" name="LocalidadDelTutor" required>
           </div>
         </div>
         <div class="form-group">
           <label class="font-weight-bold text-uppercase" for="telT">Teléfono:</label>
-          <input type="text" class="form-control" id="telT" placeholder="Número telefónico personal" required>
+          <input type="text" class="form-control" id="telT" placeholder="Número telefónico" name="TelefonoDelTutor" required>
         </div>
         <div class="row">
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="trabajoT">Lugar Donde Trabaja:</label>
-            <input type="text" class="form-control" id="trabajoT" placeholder="Nombre de la empresa" required>
+            <input type="text" class="form-control" id="trabajoT" placeholder="Nombre de la empresa" name="TrabajoDelTutor" required>
           </div>
           <div class="form-group col-md-6">
             <label class="font-weight-bold text-uppercase" for="ingrosoT">Ingreso Mensual:</label>
-            <input type="text" class="form-control" id="ingrosoT" placeholder="Cuanto gana al mes" required>
+            <input type="text" class="form-control" id="ingrosoT" placeholder="¿Cuánto gana al mes?" name="IngresoDelTutor" required>
           </div>
         </div>
 
         <div class="form-group row col-md-4">
           <label class="font-weight-bold text-uppercase" for="datoF">¿Quién Proporciona Los Datos?</label>
-          <select id="datoF" class="form-control">
+          <select id="datoF" class="form-control" name="DatosdePadresDelEstudiante">
             <option selected>Selecciona</option>
             <option>PADRE</option>
             <option>MADRE</option>
@@ -325,7 +325,7 @@
 
         <div class="form-group">
           <label class="font-weight-bold text-uppercase" for="nombre">Nombre De Quien Proporciona Los Datos:</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" name="NombreResponsableDelEstudiante" required>
         </div>
         <hr>
         <h2 align="center">ADJUNTAR LOS SIGUIENTES ARCHIVOS</h2>
