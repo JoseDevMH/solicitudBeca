@@ -38,8 +38,8 @@
     echo $Ingresos = $_POST['Ingresos'] . '<br>';
     echo $Email = $_POST['Email'] . '<br>';
     echo $Telefono = $_POST['Telefono'] . '<br>';
-    if (isset($_POST['InformacionPadres'])){
-        echo $_POST['InformacionPadres'] . '<br>'; // Muestra el CheckBox marcado.
+    if (isset($_POST['QuienDaInformacion'])){
+        echo $_POST['QuienDaInformacion'] . '<br>'; // Muestra el CheckBox marcado.
         }
     echo $Informacion = $_POST['Informacion'] . '<br>';
 
