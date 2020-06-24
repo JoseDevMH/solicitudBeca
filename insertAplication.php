@@ -1,43 +1,46 @@
 <?php
     //* ---------------- Información de Alumno -----------------------------------
-    echo $nombreAlumno = $_POST['nombreAlumno'];
-    echo $primerApellidoAlumno = $_POST['primerApellidoAlumno'];
-    echo $segundoApellidoAlumno = $_POST['segundoApellidoAlumno'];
-    echo $EdadAlumno = $_POST['EdadAlumno'];
-    echo $CurpAlumno = $_POST['CurpAlumno'];
-    echo $Calle = $_POST['Calle'];
-    echo $Numero = $_POST['Numero'];
-    echo $ColoniaAlumno = $_POST['ColoniaAlumno'];
-    echo $LocalidadAlumno = $_POST['LocalidadAlumno'];
+    echo $nombreAlumno = $_POST['nombreAlumno'] . '<br>';
+    echo $primerApellidoAlumno = $_POST['primerApellidoAlumno'] . '<br>';
+    echo $segundoApellidoAlumno = $_POST['segundoApellidoAlumno'] . '<br>';
+    echo $EdadAlumno = $_POST['EdadAlumno'] . '<br>';
+    echo $CurpAlumno = $_POST['CurpAlumno'] . '<br>';
+    echo $Calle = $_POST['Calle'] . '<br>';
+    echo $Numero = $_POST['Numero'] . '<br>';
+    echo $ColoniaAlumno = $_POST['ColoniaAlumno'] . '<br>';
+    echo $LocalidadAlumno = $_POST['LocalidadAlumno'] . '<br>';
 
     //* ---------------- Información de la Escuela -----------------------------------
-    echo $Primaria = $_POST['Primaria'];
-    echo $Secundaria = $_POST['Secundaria'];
-    echo $GradoEscolar = $_POST['GradoEscolar'];
-    echo $PromedioAlumno = $_POST['PromedioAlumno'];
-    echo $NombreEscuela = $_POST['NombreEscuela'];
-    echo $LocalidadEscuela = $_POST['LocalidadEscuela'];
-    echo $Matutino = $_POST['Matutino'];
-    echo $Vespertino = $_POST['Vespertino'];
+    if (isset($_POST['Nivel'])){
+        echo $_POST['Nivel'] . '<br>'; // Muestra el CheckBox marcado.
+        }
+    echo $GradoEscolar = $_POST['GradoEscolar'] . '<br>';
+    echo $PromedioAlumno = $_POST['PromedioAlumno'] . '<br>';
+    echo $NombreEscuela = $_POST['NombreEscuela'] . '<br>';
+    echo $LocalidadEscuela = $_POST['LocalidadEscuela'] . '<br>';
+    if (isset($_POST['Turno'])){
+        echo $_POST['Turno'] . '<br>'; // Muestra el CheckBox marcado.
+        }
 
     //* ---------------- Información de los Padres o Tutor-----------------------------------
-    echo $NombreDelPadre = $_POST['NombreDelPadre'];
-    echo $ocupacionPadre = $_POST['ocupacionPadre'];
-    echo $TrabajoDelPadre = $_POST['TrabajoDelPadre'];
-    echo $NombreDelaMadre = $_POST['NombreDelaMadre'];
-    echo $ocupacionMadre = $_POST['ocupacionMadre'];
-    echo $TrabajoDelaMadre = $_POST['TrabajoDelaMadre'];
-    echo $Tutor = $_POST['Tutor'];
-    echo $ocupacionTutor = $_POST['ocupacionTutor'];
-    echo $TrabajoDelTutor = $_POST['TrabajoDelTutor'];
-    echo $Padre = $_POST['Padre'];
-    echo $Madre = $_POST['Madre'];
-    echo $Tutor = $_POST['Tutor'];
-    echo $Ingresos = $_POST['Ingresos'];
-    echo $Email = $_POST['Email'];
-    echo $Telefono = $_POST['Telefono'];
-    echo $InformacionPadre = $_POST['InformacionPadre'];
-    echo $InformacionMadre = $_POST['InformacionMadre'];
-    echo $InformacionTutor = $_POST['InformacionTutor'];
-    echo $Informacion = $_POST['Informacion'];
+    echo $NombreDelPadre = $_POST['NombreDelPadre'] . '<br>';
+    echo $ocupacionPadre = $_POST['ocupacionPadre'] . '<br>';
+    echo $TrabajoDelPadre = $_POST['TrabajoDelPadre'] . '<br>';
+    echo $NombreDelaMadre = $_POST['NombreDelaMadre'] . '<br>';
+    echo $ocupacionMadre = $_POST['ocupacionMadre'] . '<br>';
+    echo $TrabajoDelaMadre = $_POST['TrabajoDelaMadre'] . '<br>';
+    echo $Tutor = $_POST['Tutor'] . '<br>';
+    echo $ocupacionTutor = $_POST['ocupacionTutor'] . '<br>';
+    echo $TrabajoDelTutor = $_POST['TrabajoDelTutor'] . '<br>';
+    if (isset($_POST['Padres'])){
+        echo $_POST['Padres'] . '<br>'; // Muestra el CheckBox marcado.
+        }
+    echo $Ingresos = $_POST['Ingresos'] . '<br>';
+    echo $Email = $_POST['Email'] . '<br>';
+    echo $Telefono = $_POST['Telefono'] . '<br>';
+    if (isset($_POST['InformacionPadres'])){
+        echo $_POST['InformacionPadres'] . '<br>'; // Muestra el CheckBox marcado.
+        }
+    echo $Informacion = $_POST['Informacion'] . '<br>';
+
 ?>
