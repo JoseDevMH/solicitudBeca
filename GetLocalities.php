@@ -2,13 +2,13 @@
 
     require "Conexion.php";
 
-    class DevuelveVacantes extends Conexion{
+    class GetLocality extends Conexion{
         public function __construct(){
             parent::__construct();
         }
 
-        public function getVacantes(){
-            $sql = "SELECT * FROM vacante";
+        public function getLocality(){
+            $sql = "SELECT * FROM localities";
             $sentencia = $this->conexionDB->prepare($sql);
             $sentencia->execute(array());
             $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);

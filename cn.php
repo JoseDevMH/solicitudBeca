@@ -6,7 +6,7 @@ $password = "estaeslabolsadeempleo";*/
 
 
 $hostname = "localhost";
-$database = "bolsaempleo";
+$database = "becas";
 $username = "root";
 $password = "";
 
