@@ -57,11 +57,14 @@
     if (isset($_POST['Padres'])){
         echo $_POST['Padres'] . '<br>'; 
         }
-    echo $Ingresos = $_POST['Ingresos'] . '<br>';
+    echo $Ingresos = $_POST['Ingresos'] : null . '<br>';
     echo $Email = $_POST['Email'] . '<br>';
-    echo $Telefono = $_POST['Telefono'] . '<br>';
+    echo $Telefono = $_POST['Telefono'] : null . '<br>';
+    if (isset($_POST['TelefonoAdicional'])){
+        echo $_POST['TelefonoAdicional'] : null . '<br>'; 
+        }
     if (isset($_POST['QuienDaInformacion'])){
-        echo $_POST['QuienDaInformacion'] . '<br>'; 
+        echo $_POST['QuienDaInformacion'] : null . '<br>'; 
         }
     echo $Informacion = $_POST['Informacion'] . '<br>';
 
