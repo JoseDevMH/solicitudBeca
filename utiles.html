@@ -67,9 +67,8 @@
   <div class="container mt-3 mb-3">
     <h1>Coordinación de Educación Municipal</h1>
     <h2>Solitud de Paquetes Escolares</h2>
-    <p>Estos paquetes son para Noviles de Primaria y Secundaria</p>
+    <p>Estos paquetes son para Niviles de Primaria y Secundaria</p>
     <form class="form" method="POST" action="insertAplication.php">
-
       <div class="card">
         <div class="card-header">
           <h3>Información del Alumno</h3>
@@ -79,8 +78,8 @@
             <div class="col-12 ">
               <div class="form-group">
                 <label class="font-weight-bold" for="nombrerA">Nombre:</label>
-                <input type="text" class="form-control" placeholder="Nombre(s)" id="nombrerA"
-                  name="nombreAlumno" maxlength="50" required>
+                <input type="text" class="form-control" placeholder="Nombre(s)" id="nombrerA" name="nombreAlumno"
+                  maxlength="50" required>
               </div>
             </div>
           </div>
@@ -104,21 +103,23 @@
             <div class="col-md-3">
               <div class="form-group">
                 <label class="font-weight-bold" for="edadA">Edad:</label>
-                <input type="text" class="form-control" id="edadA" placeholder="Cuantos años tienes"
-                  name="EdadAlumno" maxlength="2" required>
+                <input type="text" class="form-control" id="edadA" placeholder="Cuantos años tienes" name="EdadAlumno"
+                  maxlength="2" required>
               </div>
             </div>
             <div class="col-md-9">
               <div class="form-group">
                 <label class="font-weight-bold" for="curp">CURP:</label>
-                <input type="text" class="form-control" maxlength="18" id="curp" placeholder="CURP" name="CurpAlumno" required>
+                <input type="text" class="form-control" maxlength="18" id="curp" placeholder="CURP" name="CurpAlumno"
+                  required>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-9">
               <label class="font-weight-bold" for="domicilioA">Domicilio:</label>
-              <input type="text" class="form-control" maxlength="40" id="domicilioA" placeholder="Calle" name="Calle" required>
+              <input type="text" class="form-control" maxlength="40" id="domicilioA" placeholder="Calle" name="Calle"
+                required>
             </div>
             <div class="form-group col-3">
               <label class="font-weight-bold" for="num_exA">Número Exterior:</label>
@@ -150,17 +151,17 @@
         </div>
         <div class="card-body">
           <div class="row">
-          <div class="form-group col-md-3">
-            <label class="font-weight-bold" for="localE">Nivel:</label><br />
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="Nivel" id="primaria" value="P">
-              <label class="form-check-label" for="primaria">Primaria</label>
+            <div class="form-group col-md-3">
+              <label class="font-weight-bold" for="localE">Nivel:</label><br />
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Nivel" id="primaria" value="P">
+                <label class="form-check-label" for="primaria">Primaria</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Nivel" id="secundaria" value="S">
+                <label class="form-check-label" for="secundaria">Secundaria</label>
+              </div>
             </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="Nivel" id="secundaria" value="S">
-              <label class="form-check-label" for="secundaria">Secundaria</label>
-            </div>
-          </div>          
             <div class="form-group col-md-3">
               <label class="font-weight-bold" for="localE">Grado de escuela:</label>
               <select id="datoF" class="form-control" name="GradoEscolar" required>
@@ -184,7 +185,7 @@
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="Turno" id="Vespertino" value="V">
                 <label class="form-check-label" for="Vespertino">Vespertino</label>
-              </div>              
+              </div>
             </div>
             <div class="form-group col-md-3">
               <label class="font-weight-bold" for="promedio">Promedio:</label>
@@ -193,25 +194,25 @@
             </div>
           </div>
           <div class="row">
-          <div class="form-group col-12">
-            <label class="font-weight-bold" for="nombreEsc">Nombre De La Escuela:</label>
-            <select id="datoF" class="form-control" name="Escuela" required>
-              <option selected>Selecciona Tu Escuela</option>
-              <option value="23">Rosarios Castellanos</option>
-            </select>
+            <div class="form-group col-12">
+              <label class="font-weight-bold" for="nombreEsc">Nombre De La Escuela:</label>
+              <select id="datoF" class="form-control" name="Escuela" required>
+                <option selected>Selecciona Tu Escuela</option>
+                <option value="23">Rosarios Castellanos</option>
+              </select>
+            </div>
           </div>
-        </div>
           <div class="row">
-            <div class="form-group col-12">              
+            <div class="form-group col-12">
               <label class="font-weight-bold" for="localA">Localidad:</label>
               <select id="datoF" class="form-control" name="Localidad" required>
                 <option selected>Localidad, comunidad o ciudad donde esta tu escuela</option>
                 <option value="1">Juventino Rosas</option>
               </select>
             </div>
-          </div>            
           </div>
-        
+        </div>
+
       </div>
       <hr>
       </hr>
@@ -230,7 +231,7 @@
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="trabajoP">Ocupación:</label>
               <input type="text" class="form-control" id="trabajoP" placeholder="En que trabaja" name="ocupacionPadre"
-              maxlength="30">
+                maxlength="30">
             </div>
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja:</label>
@@ -247,7 +248,7 @@
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="trabajoP">Ocupación:</label>
               <input type="text" class="form-control" id="trabajoP" placeholder="En que trabaja" name="ocupacionMadre"
-              maxlength="80">
+                maxlength="80">
             </div>
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja:</label>
@@ -258,11 +259,13 @@
           <div class="row">
             <div class="form-group col-12">
               <label class="font-weight-bold" for="nombreP">Nombre del Tutor:</label>
-              <input type="text" class="form-control" maxlength="80" id="nombreP" placeholder="Nombre del Tutor" name="Tutor">
+              <input type="text" class="form-control" maxlength="80" id="nombreP" placeholder="Nombre del Tutor"
+                name="Tutor">
             </div>
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="trabajoP">Ocupación:</label>
-              <input type="text" class="form-control" maxlength="40" id="trabajoP" placeholder="En que trabaja" name="ocupacionTutor">
+              <input type="text" class="form-control" maxlength="40" id="trabajoP" placeholder="En que trabaja"
+                name="ocupacionTutor">
             </div>
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja:</label>
@@ -300,19 +303,19 @@
               <label class="font-weight-bold" for="email">Correo Electrónico:</label>
               <input type="email" class="form-control" maxlength="100" id="email" placeholder="Email" name="Email">
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-3">
               <label class="font-weight-bold" for="telA">Teléfono</label>
-              <input type="text" class="form-control"  maxlength="10" id="telA" placeholder="Número telefónico"
+              <input type="text" class="form-control" maxlength="10" id="telA" placeholder="Número telefónico"
                 name="Telefono" required>
+            </div>
+            <div class="form-group col-md-3">
+              <label class="font-weight-bold" for="tel2">Teléfono adicional</label>
+              <input type="text" class="form-control" maxlength="10" id="tel2" placeholder="Número telefónico"
+                name="TelefonoAdicional">
             </div>
           </div>
           <div class="row">
-            <div class="form-group col-md-4">
-              <label class="font-weight-bold" for="tel2">Teléfono adicional</label>
-              <input type="text" class="form-control"  maxlength="10" id="tel2" placeholder="Número telefónico"
-                name="TelefonoAdicional">
-            </div>
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-5">
               <label class="font-weight-bold" for="localE">¿Quién esta proporcinando la Información?:</label>
               <br>
               <div class="form-check form-check-inline">
@@ -326,18 +329,19 @@
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="QuienDaInformacion" id="InformacionTutor" value="T">
                 <label class="form-check-label" for="InformacionTutor">Tutor</label>
-              </div>          
+              </div>
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-7">
               <label class="font-weight-bold" for="dato">Nombre de quien da la Información:</label>
-              <input type="text" class="form-control"  maxlength="80" id="dato" placeholder="Nombre completo"
+              <input type="text" class="form-control" maxlength="80" id="dato" placeholder="Nombre completo"
                 name="Informacion" required>
             </div>
           </div>
         </div>
       </div>
 
-      <hr></hr>
+      <hr>
+      </hr>
 
       <div class="card">
         <div class="card-header">
