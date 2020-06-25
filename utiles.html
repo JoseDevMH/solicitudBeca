@@ -66,7 +66,8 @@
   <!--Contenido de la pagina ///////////////////////////////////////////////-->
   <div class="container mt-3 mb-3">
     <h1>Coordinación de Educación Municipal</h1>
-    <h2>Solitud de Becas Monetarias</h2>
+    <h2>Solitud de Paquetes Escolares</h2>
+    <p>Estos paquetes son para Noviles de Primaria y Secundaria</p>
     <form class="form" method="POST" action="insertAplication.php">
 
       <div class="card">
@@ -134,8 +135,10 @@
             </div>
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="localA">Localidad:</label>
-              <input type="text" class="form-control" id="localA" placeholder="Nombre del municipio"
-                name="LocalidadAlumno" maxlength="40" required>
+              <select id="datoF" class="form-control" name="Localidad" required>
+                <option selected>Localidad, Comunidad o Ciudad</option>
+                <option value="1">Juventino Rosas</option>
+              </select>
             </div>
           </div>
         </div>
@@ -148,8 +151,9 @@
           <h3>Información Escolar</h3>
         </div>
         <div class="card-body">
-          <div class="form-group col-md-4">
-            <label class="font-weight-bold" for="localE">Nivel:</label>
+          <div class="row">
+          <div class="form-group col-md-3">
+            <label class="font-weight-bold" for="localE">Nivel:</label><br />
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="Nivel" id="primaria" value="P">
               <label class="form-check-label" for="primaria">Primaria</label>
@@ -158,41 +162,23 @@
               <input class="form-check-input" type="radio" name="Nivel" id="secundaria" value="S">
               <label class="form-check-label" for="secundaria">Secundaria</label>
             </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-md-4">
+          </div>          
+            <div class="form-group col-md-3">
               <label class="font-weight-bold" for="localE">Grado de escuela:</label>
-              <select id="datoF" class="form-control" name="GradoEscolar">
+              <select id="datoF" class="form-control" name="GradoEscolar" required>
                 <option selected>Selecciona</option>
-                <option>2 Grado de primaria</option>
-                <option>3 Grado de primaria</option>
-                <option>4 Grado de primaria</option>
-                <option>5 Grado de primaria</option>
-                <option>6 Grado de primaria</option>
-                <option>1 Grado de Secundaria</option>
-                <option>2 Grado de Secundaria</option>
-                <option>3 Grado de Secundaria</option>
+                <option value="2">2do. de primaria</option>
+                <option value="3">3ro. de primaria</option>
+                <option value="4">4to. de primaria</option>
+                <option value="5">5to. de primaria</option>
+                <option value="6">6to. de primaria</option>
+                <option value="7">1ro. de Secundaria</option>
+                <option value="8">2do. de Secundaria</option>
+                <option value="9">3ro. de Secundaria</option>
               </select>
             </div>
-            <div class="form-group col-md-4">
-              <label class="font-weight-bold" for="promedio">Promedio:</label>
-              <input type="text" class="form-control" id="promedio" placeholder="Promedio actual" name="PromedioAlumno"
-                maxlength="5" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="font-weight-bold" for="nombreEsc">Nombre De La Escuela:</label>
-            <input type="text" class="form-control" id="nombreEsc" placeholder="Nombre de la escuela"
-              name="NombreEscuela" maxlength="50" required>
-          </div>
-          <div class="row">
-            <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="localE">Localidad:</label>
-              <input type="text" class="form-control" id="localE" placeholder="Nombre del municipio"
-                name="LocalidadEscuela" maxlength="30">
-            </div>
-            <div class="form-group col-md-4">
-              <label class="font-weight-bold" for="localE">Turno:</label>
+            <div class="form-group col-md-3">
+              <label class="font-weight-bold" for="localE">Turno:</label><br />
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="Turno" id="Matutino" value="M">
                 <label class="form-check-label" for="Matutino">Matutino</label>
@@ -202,8 +188,32 @@
                 <label class="form-check-label" for="Vespertino">Vespertino</label>
               </div>
             </div>
+            <div class="form-group col-md-3">
+              <label class="font-weight-bold" for="promedio">Promedio:</label>
+              <input type="text" class="form-control" id="promedio" placeholder="Promedio actual" name="PromedioAlumno"
+                maxlength="5" required>
+            </div>
+          </div>
+          <div class="row">
+          <div class="form-group col-12">
+            <label class="font-weight-bold" for="nombreEsc">Nombre De La Escuela:</label>
+            <select id="datoF" class="form-control" name="Escuela" required>
+              <option selected>Selecciona Tu Escuela</option>
+              <option value="23">Rosarios Castellanos</option>
+            </select>
           </div>
         </div>
+          <div class="row">
+            <div class="form-group col-12">              
+              <label class="font-weight-bold" for="localA">Localidad:</label>
+              <select id="datoF" class="form-control" name="Localidad" required>
+                <option selected>Localidad, comunidad o ciudad donde esta tu escuela</option>
+                <option value="1">Juventino Rosas</option>
+              </select>
+            </div>
+          </div>            
+          </div>
+        
       </div>
       <hr>
       </hr>
@@ -337,13 +347,13 @@
         <div class="card-body">
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="curp">CURP del Estudiante:</label>
-            <input type="file" class="form-control-file" id="curp">
+            <input type="file" class="form-control-file" id="curp" required>
           </div>
 
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses
               de antigüedad)</label>
-            <input type="file" class="form-control-file" id="domicilio">
+            <input type="file" class="form-control-file" id="domicilio" required>
           </div>
 
           <div class="form-group">
@@ -351,7 +361,7 @@
               Boleta o constancia con promedio emitida por el sistema educativo donde compruebe que el alumno está
               inscrito
             </label>
-            <input type="file" class="form-control-file" id="boleta">
+            <input type="file" class="form-control-file" id="boleta" required>
           </div>
 
         </div>
