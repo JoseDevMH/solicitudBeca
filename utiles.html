@@ -293,11 +293,16 @@
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="telA">Teléfono</label>
               <input type="text" class="form-control"  maxlength="10" id="telA" placeholder="Número telefónico"
-                name="Telefono">
+                name="Telefono" required>
             </div>
           </div>
           <div class="row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-4">
+              <label class="font-weight-bold" for="tel2">Teléfono adicional</label>
+              <input type="text" class="form-control"  maxlength="10" id="tel2" placeholder="Número telefónico"
+                name="TelefonoAdicional">
+            </div>
+            <div class="form-group col-md-4">
               <label class="font-weight-bold" for="localE">¿Quién esta proporcinando la Información?:</label>
               <br>
               <div class="form-check form-check-inline">
@@ -313,7 +318,7 @@
                 <label class="form-check-label" for="InformacionTutor">Tutor</label>
               </div>          
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-4">
               <label class="font-weight-bold" for="dato">Nombre de quien da la Información:</label>
               <input type="text" class="form-control"  maxlength="80" id="dato" placeholder="Nombre completo"
                 name="Informacion" required>
