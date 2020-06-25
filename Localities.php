@@ -1,6 +1,6 @@
 <?php
 
-    require "Conexion.php";
+    require_once ("Conexion.php");
 
     class Localities extends Conexion{
         public function __construct(){
