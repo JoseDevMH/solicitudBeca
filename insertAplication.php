@@ -6,40 +6,65 @@
     echo $EdadAlumno = $_POST['EdadAlumno'] . '<br>';
     echo $CurpAlumno = $_POST['CurpAlumno'] . '<br>';
     echo $Calle = $_POST['Calle'] . '<br>';
-    echo $Numero = $_POST['Numero'] . '<br>';
+    if (isset($_POST['Numero'])){
+        echo $_POST['Numero'] : null . '<br>'; 
+        }
     echo $ColoniaAlumno = $_POST['ColoniaAlumno'] . '<br>';
     echo $LocalidadAlumno = $_POST['LocalidadAlumno'] . '<br>';
 
     //* ---------------- Información de la Escuela -----------------------------------
     if (isset($_POST['Nivel'])){
-        echo $_POST['Nivel'] . '<br>'; // Muestra el CheckBox marcado.
+        echo $_POST['Nivel'] . '<br>'; 
         }
     echo $GradoEscolar = $_POST['GradoEscolar'] . '<br>';
     echo $PromedioAlumno = $_POST['PromedioAlumno'] . '<br>';
     echo $NombreEscuela = $_POST['NombreEscuela'] . '<br>';
-    echo $LocalidadEscuela = $_POST['LocalidadEscuela'] . '<br>';
+    if (isset($_POST['LocalidadEscuela'])){
+        echo $_POST['LocalidadEscuela'] : null . '<br>'; 
+        }
     if (isset($_POST['Turno'])){
-        echo $_POST['Turno'] . '<br>'; // Muestra el CheckBox marcado.
+        echo $_POST['Turno'] . '<br>'; 
         }
 
     //* ---------------- Información de los Padres o Tutor-----------------------------------
-    echo $NombreDelPadre = $_POST['NombreDelPadre'] . '<br>';
-    echo $ocupacionPadre = $_POST['ocupacionPadre'] . '<br>';
-    echo $TrabajoDelPadre = $_POST['TrabajoDelPadre'] . '<br>';
-    echo $NombreDelaMadre = $_POST['NombreDelaMadre'] . '<br>';
-    echo $ocupacionMadre = $_POST['ocupacionMadre'] . '<br>';
-    echo $TrabajoDelaMadre = $_POST['TrabajoDelaMadre'] . '<br>';
-    echo $Tutor = $_POST['Tutor'] . '<br>';
-    echo $ocupacionTutor = $_POST['ocupacionTutor'] . '<br>';
-    echo $TrabajoDelTutor = $_POST['TrabajoDelTutor'] . '<br>';
-    if (isset($_POST['Padres'])){
-        echo $_POST['Padres'] . '<br>'; // Muestra el CheckBox marcado.
+    if (isset($_POST['NombreDelPadre'])){
+        echo $_POST['NombreDelPadre'] : null . '<br>'; 
         }
-    echo $Ingresos = $_POST['Ingresos'] . '<br>';
+    if (isset($_POST['ocupacionPadre'])){
+        echo $_POST['ocupacionPadre'] : null . '<br>'; 
+        }
+    if (isset($_POST['TrabajoDelPadre'])){
+        echo $_POST['TrabajoDelPadre'] : null . '<br>'; 
+        }
+    if (isset($_POST['NombreDelaMadre'])){
+        echo $_POST['NombreDelaMadre'] : null . '<br>'; 
+        }
+    if (isset($_POST['ocupacionMadre'])){
+        echo $_POST['ocupacionMadre'] : null . '<br>'; 
+        }
+    if (isset($_POST['TrabajoDelaMadre'])){
+        echo $_POST['TrabajoDelaMadre'] : null . '<br>'; 
+        }
+    if (isset($_POST['Tutor'])){
+        echo $_POST['Tutor'] : null . '<br>'; 
+        }
+    if (isset($_POST['ocupacionTutor'])){
+        echo $_POST['ocupacionTutor'] : null . '<br>';
+        }
+    if (isset($_POST['TrabajoDelTutor'])){
+            echo $_POST['TrabajoDelTutor'] : null . '<br>';
+            }
+    if (isset($_POST['Padres'])){
+        echo $_POST['Padres'] . '<br>'; 
+        }
+    echo $Ingresos = $_POST['Ingresos'] : null . '<br>';
     echo $Email = $_POST['Email'] . '<br>';
-    echo $Telefono = $_POST['Telefono'] . '<br>';
-    if (isset($_POST['InformacionPadres'])){
-        echo $_POST['InformacionPadres'] . '<br>'; // Muestra el CheckBox marcado.
+    echo $Telefono = $_POST['Telefono'] : null . '<br>';
+    if (isset($_POST['TelefonoAdicional'])){
+        echo $_POST['TelefonoAdicional'] : null . '<br>'; 
+        }
+    if (isset($_POST['QuienDaInformacion'])){
+        echo $_POST['QuienDaInformacion'] : null . '<br>'; 
         }
     echo $Informacion = $_POST['Informacion'] . '<br>';
 
