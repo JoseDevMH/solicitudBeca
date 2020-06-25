@@ -2,13 +2,13 @@
 
     require "Conexion.php";
 
-    class Localities extends Conexion{
+    class Schools extends Conexion{
         public function __construct(){
             parent::__construct();
         }
 
-        public function getLocality(){
-            $sql = "SELECT * FROM localities";
+        public function getSchool(){
+            $sql = "SELECT * FROM schools";
             $sentencia = $this->conexionDB->prepare($sql);
             $sentencia->execute(array());
             $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);

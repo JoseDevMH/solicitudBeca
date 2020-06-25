@@ -1,9 +1,4 @@
 <?php
-/*$hostname = "localhost";
-$database = "juventin_bolsa_empleo";
-$username = "juventin_bolsa";
-$password = "estaeslabolsadeempleo";*/
-
 
 $hostname = "localhost";
 $database = "becas";

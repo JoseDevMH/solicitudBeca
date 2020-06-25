@@ -1,17 +1,17 @@
 <?php
-    require_once("Localities.php");
+    require_once("Schools.php");
 
-    $locality = New Localities();
-    $matrizLocalities=$locality->getLocality();
+    $locality = New Schools();
+    $matrizSchools=$locality->getSchool();
     /*<?php foreach($matrizLocalities as $item): ?>
         <li> <?php echo $item['IdLocality'] . ' - ' . $item['Locality']; ?>
        </li>
         <?php endforeach; ?>*/
     //echo var_dump ($matrizLocalities);
-    foreach ($matrizLocalities as $item) {
+    foreach ($matrizSchools as $item) {
         # code...
         echo "<li>";
-        echo $item['IdLocality'] . " , " . $item['Locality'];
+        echo $item['IdSchool'] . "   " . $item['Level'] . "   " . $item['School']  . "   " . $item['Address'];
         echo "</li>";
     }
 
