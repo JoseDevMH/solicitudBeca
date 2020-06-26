@@ -1,8 +1,8 @@
 <?php
     require_once("Schools.php");
 
-    $locality = New Schools();
-    $matrizSchools=$locality->getSchool();
+    $school = New Schools();
+    $matrizSchools=$school->getSchool();
     /*<?php foreach($matrizLocalities as $item): ?>
         <li> <?php echo $item['IdLocality'] . ' - ' . $item['Locality']; ?>
        </li>

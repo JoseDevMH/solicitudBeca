@@ -298,3 +298,11 @@ h5 {
      background: none;
      padding: 0 0 1em 0;
 }
+
+.campoObligatorio
+{
+     font-size: 0.8em;
+     font-weight: bolder;
+     color: #ff0000;
+     padding: 1em;
+}

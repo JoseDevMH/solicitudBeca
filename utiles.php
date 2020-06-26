@@ -68,6 +68,7 @@
     <h1>Coordinación de Educación Municipal</h1>
     <h2>Solitud de Paquetes Escolares</h2>
     <p>Estos paquetes son para Niviles de Primaria y Secundaria</p>
+    <p class="campoObligatorio">Los datos marcados con * son obligatorios</p>
     <form class="form" method="POST" action="insertAplication.php">
       <div class="card">
         <div class="card-header">
@@ -76,8 +77,8 @@
         <div class="card-body">
           <div class="row">
             <div class="col-12 ">
-              <div class="form-group">
-                <label class="font-weight-bold" for="nombrerA">Nombre:</label>
+              <div class="form-group inline-block">
+                <label class="font-weight-bold" for="nombrerA">Nombre: <span class="campoObligatorio">*</span></label>
                 <input type="text" class="form-control" placeholder="Nombre(s)" id="nombrerA" name="nombreAlumno"
                   maxlength="50" required>
               </div>
@@ -86,14 +87,14 @@
           <div class="row">
             <div class="col-12 col-md-6">
               <div class="form-group">
-                <label class="font-weight-bold" for="priApellido">Primer Apellido:</label>
+                <label class="font-weight-bold" for="priApellido">Primer Apellido: <span class="campoObligatorio">*</span></label>
                 <input type="text" class="form-control" placeholder="Primer Apellido" id="priApellido"
                   name="primerApellidoAlumno" maxlength="50" required>
               </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="form-group">
-                <label class="font-weight-bold" for="segApellido">Segundo Apellido:</label>
+                <label class="font-weight-bold" for="segApellido">Segundo Apellido: <span class="campoObligatorio">*</span></label>
                 <input type="text" class="form-control" placeholder="Segundo Apellido" id="segApellido"
                   name="segundoApellidoAlumno" maxlength="50" required>
               </div>
@@ -102,27 +103,27 @@
           <div class="row">
             <div class="col-md-3">
               <div class="form-group">
-                <label class="font-weight-bold" for="edadA">Edad:</label>
+                <label class="font-weight-bold" for="edadA">Edad: <span class="campoObligatorio">*</span></label>
                 <input type="text" class="form-control" id="edadA" placeholder="Cuantos años tienes" name="EdadAlumno"
                   maxlength="2" required>
               </div>
             </div>
             <div class="col-md-9">
               <div class="form-group">
-                <label class="font-weight-bold" for="curp">CURP:</label>
+                <label class="font-weight-bold" for="curp">CURP: <span class="campoObligatorio">*</span></label>
                 <input type="text" class="form-control" maxlength="18" id="curp" placeholder="CURP" name="CurpAlumno"
-                  required>
+                  required><span class="campoObligatorio">*</span>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-9">
-              <label class="font-weight-bold" for="domicilioA">Domicilio:</label>
+              <label class="font-weight-bold" for="domicilioA">Domicilio: <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" maxlength="40" id="domicilioA" placeholder="Calle" name="Calle"
                 required>
             </div>
             <div class="form-group col-3">
-              <label class="font-weight-bold" for="num_exA">Número Exterior:</label>
+              <label class="font-weight-bold" for="num_exA">Número Exterior: <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" id="num_exA" maxlength="5" placeholder="Número" name="Numero">
             </div>
           </div>
@@ -133,7 +134,7 @@
                 name="ColoniaAlumno" required>
             </div>
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="localA">Localidad:</label>
+              <label class="font-weight-bold" for="localA">Localidad: <span class="campoObligatorio">*</span></label>
               <?php
                     require_once("Localities.php");
                     $locality = New Localities();
@@ -141,7 +142,7 @@
                 ?>
                 
                 <!--//Inicio del select ////////////////////////////-->
-                <select id="datoF" class="form-control" name="LocalidadAlumno" required>
+                <select id="datoF" class="form-control" name="LocalidadAlumno" required><span class="campoObligatorio">*</span>
                 <option selected>Localidad, Comunidad o Ciudad</option>
 
                 <?php 
@@ -166,7 +167,7 @@
         <div class="card-body">
           <div class="row">
             <div class="form-group col-md-3">
-              <label class="font-weight-bold" for="localE">Nivel:</label><br />
+              <label class="font-weight-bold" for="localE">Nivel: <span class="campoObligatorio">*</span></label><br />
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="Nivel" id="primaria" value="P">
                 <label class="form-check-label" for="primaria">Primaria</label>
@@ -177,7 +178,7 @@
               </div>
             </div>
             <div class="form-group col-md-3">
-              <label class="font-weight-bold" for="localE">Grado de escuela:</label>
+              <label class="font-weight-bold" for="localE">Grado de escuela: <span class="campoObligatorio">*</span></label>
               <select id="datoF" class="form-control" name="GradoEscolar" required>
                 <option selected>Selecciona</option>
                 <option value="2">2do. de primaria</option>
@@ -191,7 +192,7 @@
               </select>
             </div>
             <div class="form-group col-md-3">
-              <label class="font-weight-bold" for="localE">Turno:</label><br />
+              <label class="font-weight-bold" for="localE">Turno: <span class="campoObligatorio">*</span></label><br />
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="Turno" id="Matutino" value="M">
                 <label class="form-check-label" for="Matutino">Matutino</label>
@@ -202,7 +203,7 @@
               </div>
             </div>
             <div class="form-group col-md-3">
-              <label class="font-weight-bold" for="promedio">Promedio:</label>
+              <label class="font-weight-bold" for="promedio">Promedio: <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" id="promedio" placeholder="Promedio actual" name="PromedioAlumno"
                 maxlength="5" required>
             </div>
@@ -210,7 +211,7 @@
           
           <div class="row">
             <div class="form-group col-12">
-                <label class="font-weight-bold" for="nombreEsc">Nombre De La Escuela:</label>
+                <label class="font-weight-bold" for="nombreEsc">Nombre De La Escuela: <span class="campoObligatorio">*</span></label>
                 <?php
                     require_once("Schools.php");
                     $school = New Schools();
@@ -234,7 +235,7 @@
 
           <div class="row">
             <div class="form-group col-12">
-                <label class="font-weight-bold" for="localA">Localidad:</label>
+                <label class="font-weight-bold" for="localA">Localidad: <span class="campoObligatorio">*</span></label>
                 <?php
                     require_once("Localities.php");
                     $locality = New Localities();
@@ -267,59 +268,59 @@
         <div class="card-body">
           <div class="row">
             <div class="form-group col-12">
-              <label class="font-weight-bold" for="nombreP">Nombre del Padre:</label>
+              <label class="font-weight-bold" for="nombreP">Nombre del Padre</label>
               <input type="text" class="form-control" id="nombreP" placeholder="Nombre completo del papá"
                 name="NombreDelPadre" maxlength="80">
 
             </div>
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="trabajoP">Ocupación:</label>
+              <label class="font-weight-bold" for="trabajoP">Ocupación</label>
               <input type="text" class="form-control" id="trabajoP" placeholder="En que trabaja" name="ocupacionPadre"
                 maxlength="30">
             </div>
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja:</label>
+              <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja</label>
               <input type="text" class="form-control" id="trabajoP" placeholder="Nombre de la empresa"
                 name="TrabajoDelPadre" maxlength="40">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-12">
-              <label class="font-weight-bold" for="nombreP">Nombre de la Madre:</label>
+              <label class="font-weight-bold" for="nombreP">Nombre de la Madre <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" id="nombreP" placeholder="Nombre completo de la mamá"
                 name="NombreDelaMadre" maxlength="80">
             </div>
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="trabajoP">Ocupación:</label>
+              <label class="font-weight-bold" for="trabajoP">Ocupación</label>
               <input type="text" class="form-control" id="trabajoP" placeholder="En que trabaja" name="ocupacionMadre"
                 maxlength="80">
             </div>
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja:</label>
+              <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja</label>
               <input type="text" class="form-control" maxlength="40" id="trabajoP" placeholder="Nombre de la empresa"
                 name="TrabajoDelaMadre">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-12">
-              <label class="font-weight-bold" for="nombreP">Nombre del Tutor:</label>
+              <label class="font-weight-bold" for="nombreP">Nombre del Tutor</label>
               <input type="text" class="form-control" maxlength="80" id="nombreP" placeholder="Nombre del Tutor"
                 name="Tutor">
             </div>
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="trabajoP">Ocupación:</label>
+              <label class="font-weight-bold" for="trabajoP">Ocupación</label>
               <input type="text" class="form-control" maxlength="40" id="trabajoP" placeholder="En que trabaja"
                 name="ocupacionTutor">
             </div>
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja:</label>
+              <label class="font-weight-bold" for="trabajoP">Lugar Donde Trabaja</label>
               <input type="text" class="form-control" maxlength="40" id="trabajoP" placeholder="Nombre de la empresa"
                 name="TrabajoDelTutor">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="ingresoP">¿Quien(es) aportan ingreso al Hogar</label>
+              <label class="font-weight-bold" for="ingresoP">¿Quien(es) aportan ingreso al Hogar <span class="campoObligatorio">*</span></label>
               <div class="form-check">
                 <p>Pudes selecionar Varias Opciones</p>
                 <div class="form-check form-check-inline">
@@ -337,18 +338,18 @@
               </div>
             </div>
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="ingresoP">Ingreso Mensual</label>
+              <label class="font-weight-bold" for="ingresoP">Ingreso Mensual <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" id="ingresoP" placeholder="Ingreso Mensual Total al Hogar"
                 name="Ingresos" maxlength="7">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-6">
-              <label class="font-weight-bold" for="email">Correo Electrónico:</label>
+              <label class="font-weight-bold" for="email">Correo Electrónico</label>
               <input type="email" class="form-control" maxlength="100" id="email" placeholder="Email" name="Email">
             </div>
             <div class="form-group col-md-3">
-              <label class="font-weight-bold" for="telA">Teléfono</label>
+              <label class="font-weight-bold" for="telA">Teléfono <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" maxlength="10" id="telA" placeholder="Número telefónico"
                 name="Telefono" required>
             </div>
@@ -360,7 +361,7 @@
           </div>
           <div class="row">
             <div class="form-group col-md-5">
-              <label class="font-weight-bold" for="localE">¿Quién esta proporcinando la Información?:</label>
+              <label class="font-weight-bold" for="localE">¿Quién esta proporcinando la Información? <span class="campoObligatorio">*</span></label>
               <br>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="QuienDaInformacion" id="InformacionPadre" value="P">
@@ -376,7 +377,7 @@
               </div>
             </div>
             <div class="form-group col-md-7">
-              <label class="font-weight-bold" for="dato">Nombre de quien da la Información:</label>
+              <label class="font-weight-bold" for="dato">Nombre de quien da la Información <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" maxlength="80" id="dato" placeholder="Nombre completo"
                 name="Informacion" required>
             </div>
@@ -393,20 +394,20 @@
         </div>
         <div class="card-body">
           <div class="form-group">
-            <label class="font-weight-bold text-uppercase" for="curp">CURP del Estudiante:</label>
+            <label class="font-weight-bold text-uppercase" for="curp">CURP del Estudiante <span class="campoObligatorio">*</span></label>
             <input type="file" class="form-control-file" id="curp" required>
           </div>
 
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses
-              de antigüedad)</label>
+              de antigüedad) <span class="campoObligatorio">*</span></label>
             <input type="file" class="form-control-file" id="domicilio" required>
           </div>
 
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="boleta">
               Boleta o constancia con promedio emitida por el sistema educativo donde compruebe que el alumno está
-              inscrito
+              inscrito <span class="campoObligatorio">*</span>
             </label>
             <input type="file" class="form-control-file" id="boleta" required>
           </div>
