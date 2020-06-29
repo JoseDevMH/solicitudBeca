@@ -39,37 +39,6 @@
     echo $QuienDaInformacion = isset($_POST['QuienDaInformacion']) ? $_POST['QuienDaInformacion'] : "M" . "<br>";
     echo $Informacion = isset($_POST['Informacion']) ? $_POST['Informacion'] : null;
     
-    /*
-    if (isset($_POST['NombreDelaMadre'])){
-        echo $_POST['NombreDelaMadre'] : null . '<br>'; 
-        }
-    if (isset($_POST['ocupacionMadre'])){
-        echo $_POST['ocupacionMadre'] : null . '<br>'; 
-        }
-    if (isset($_POST['TrabajoDelaMadre'])){
-        echo $_POST['TrabajoDelaMadre'] : null . '<br>'; 
-        }
-    if (isset($_POST['Tutor'])){
-        echo $_POST['Tutor'] : null . '<br>'; 
-        }
-    if (isset($_POST['ocupacionTutor'])){
-        echo $_POST['ocupacionTutor'] : null . '<br>';
-        }
-    if (isset($_POST['TrabajoDelTutor'])){
-            echo $_POST['TrabajoDelTutor'] : null . '<br>';
-            }
-    if (isset($_POST['Padres'])){
-        echo $_POST['Padres'] . '<br>'; 
-        }
-    echo $Ingresos = $_POST['Ingresos'] : null . '<br>';
-    echo $Email = $_POST['Email'] . '<br>';
-    echo $Telefono = $_POST['Telefono'] : null . '<br>';
-    if (isset($_POST['TelefonoAdicional'])){
-        echo $_POST['TelefonoAdicional'] : null . '<br>'; 
-        }
-    if (isset($_POST['QuienDaInformacion'])){
-        echo $_POST['QuienDaInformacion'] : null . '<br>'; 
-        }
-    echo $Informacion = $_POST['Informacion'] . '<br>';*/
+
 
 ?>
