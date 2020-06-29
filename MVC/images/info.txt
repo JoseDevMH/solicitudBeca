@@ -1,0 +1,2 @@
+En este directorio debemos guardar las imagenes pero no se subiran a Git por lo pesadas.
+Este directorio debemos ponerlo en el .gitignore para que cuando hagamos "push origin master" no se suban lo que este aquí.
