@@ -51,4 +51,16 @@
     echo $fileSizeBoleta = $_FILES['boleta']['size'];
     echo $fileTypeBoleta = $_FILES['boleta']['type'];
 
+    $archivocurp = $_FILES['curp']['name'];
+    $guardar = $_FILES['curp']['tmp_name'];
+    $carpeta = '/documents/$curpAlumno';
+    mkdir($carpeta, 0777, true);
+    if(!file_exists($carpeta)){
+    $destino = $carpeta.$_FILES['curp']['name'];
+    copy($_FILES['curp']['tmp_name'], $destino);
+    echo "Archivo subido exitosamente";
+    }else{
+        echo "Error al subir archivo";
+    }
+
 ?>
