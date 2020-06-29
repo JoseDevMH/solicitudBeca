@@ -69,7 +69,7 @@
     <h2>Solitud de Paquetes Escolares</h2>
     <p>Estos paquetes son para Niviles de Primaria y Secundaria</p>
     <p class="campoObligatorio">Los datos marcados con * son obligatorios</p>
-    <form class="form" method="POST" action="insertAplication.php">
+    <form class="form" method="POST" action="processData.php" enctype="multipart/form-data">
       <div class="card">
         <div class="card-header">
           <h3>Información del Alumno</h3>
@@ -395,13 +395,13 @@
         <div class="card-body">
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="curp">CURP del Estudiante <span class="campoObligatorio">*</span></label>
-            <input type="file" class="form-control-file" id="curp" required>
+            <input type="file" name="curp" class="form-control-file" id="curp" required>
           </div>
 
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses
               de antigüedad) <span class="campoObligatorio">*</span></label>
-            <input type="file" class="form-control-file" id="domicilio" required>
+            <input type="file" name="domicilio" class="form-control-file" id="domicilio" required>
           </div>
 
           <div class="form-group">
@@ -409,7 +409,7 @@
               Boleta o constancia con promedio emitida por el sistema educativo donde compruebe que el alumno está
               inscrito <span class="campoObligatorio">*</span>
             </label>
-            <input type="file" class="form-control-file" id="boleta" required>
+            <input type="file" name="boleta" class="form-control-file" id="boleta" required>
           </div>
 
         </div>

@@ -37,8 +37,18 @@
     echo $Telefono = isset($_POST['Telefono']) ? $_POST['Telefono'] : null;
     echo $TelefonoAdicional = isset($_POST['TelefonoAdicional']) ? $_POST['TelefonoAdicional'] : null;
     echo $QuienDaInformacion = isset($_POST['QuienDaInformacion']) ? $_POST['QuienDaInformacion'] : "M" . "<br>";
-    echo $Informacion = isset($_POST['Informacion']) ? $_POST['Informacion'] : null;
-    
+    echo $Informacion = isset($_POST['Informacion']) ? $_POST['Informacion'] : null;  
 
+    echo $fileNameCurp = $_FILES['curp']['name'];
+    echo $fileSizeCurp = $_FILES['curp']['size'];
+    echo $fileTypeCurp = $_FILES['curp']['type'];
+
+    echo $fileNameDomicilio = $_FILES['domicilio']['name'];
+    echo $fileSizeDomicilio = $_FILES['domicilio']['size'];
+    echo $fileTypeDomicilio = $_FILES['domicilio']['type'];
+
+    echo $fileNameBoleta = $_FILES['boleta']['name'];
+    echo $fileSizeBoleta = $_FILES['boleta']['size'];
+    echo $fileTypeBoleta = $_FILES['boleta']['type'];
 
 ?>
