@@ -94,9 +94,9 @@
             </div>
             <div class="col-12 col-md-6">
               <div class="form-group">
-                <label class="font-weight-bold" for="segApellido">Segundo Apellido: <span class="campoObligatorio">*</span></label>
+                <label class="font-weight-bold" for="segApellido">Segundo Apellido: </label>
                 <input type="text" class="form-control" placeholder="Segundo Apellido" id="segApellido"
-                  name="segundoApellidoAlumno" maxlength="50" required>
+                  name="segundoApellidoAlumno" maxlength="50" >
               </div>
             </div>
           </div>
@@ -399,12 +399,6 @@
           </div>
 
           <div class="form-group">
-            <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses
-              de antigüedad) <span class="campoObligatorio">*</span></label>
-            <input type="file" name="domicilio" class="form-control-file" id="domicilio" required>
-          </div>
-
-          <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="boleta">
               Boleta o constancia con promedio emitida por el sistema educativo donde compruebe que el alumno está
               inscrito <span class="campoObligatorio">*</span>
@@ -412,6 +406,18 @@
             <input type="file" name="boleta" class="form-control-file" id="boleta" required>
           </div>
 
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses
+              de antigüedad) <span class="campoObligatorio">*</span></label>
+            <input type="file" name="domicilio" class="form-control-file" id="domicilio" required>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="curp">Credencial de elector de padre, madre o tutot <span class="campoObligatorio">*</span></label>
+            <input type="file" name="ineTutor" class="form-control-file" id="curp" required>
+          </div>
+
+          
         </div>
       </div>
       <br><br>
