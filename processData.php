@@ -37,39 +37,30 @@
     echo $Telefono = isset($_POST['Telefono']) ? $_POST['Telefono'] : null;
     echo $TelefonoAdicional = isset($_POST['TelefonoAdicional']) ? $_POST['TelefonoAdicional'] : null;
     echo $QuienDaInformacion = isset($_POST['QuienDaInformacion']) ? $_POST['QuienDaInformacion'] : "M" . "<br>";
-    echo $Informacion = isset($_POST['Informacion']) ? $_POST['Informacion'] : null;
-    
-    /*
-    if (isset($_POST['NombreDelaMadre'])){
-        echo $_POST['NombreDelaMadre'] : null . '<br>'; 
-        }
-    if (isset($_POST['ocupacionMadre'])){
-        echo $_POST['ocupacionMadre'] : null . '<br>'; 
-        }
-    if (isset($_POST['TrabajoDelaMadre'])){
-        echo $_POST['TrabajoDelaMadre'] : null . '<br>'; 
-        }
-    if (isset($_POST['Tutor'])){
-        echo $_POST['Tutor'] : null . '<br>'; 
-        }
-    if (isset($_POST['ocupacionTutor'])){
-        echo $_POST['ocupacionTutor'] : null . '<br>';
-        }
-    if (isset($_POST['TrabajoDelTutor'])){
-            echo $_POST['TrabajoDelTutor'] : null . '<br>';
-            }
-    if (isset($_POST['Padres'])){
-        echo $_POST['Padres'] . '<br>'; 
-        }
-    echo $Ingresos = $_POST['Ingresos'] : null . '<br>';
-    echo $Email = $_POST['Email'] . '<br>';
-    echo $Telefono = $_POST['Telefono'] : null . '<br>';
-    if (isset($_POST['TelefonoAdicional'])){
-        echo $_POST['TelefonoAdicional'] : null . '<br>'; 
-        }
-    if (isset($_POST['QuienDaInformacion'])){
-        echo $_POST['QuienDaInformacion'] : null . '<br>'; 
-        }
-    echo $Informacion = $_POST['Informacion'] . '<br>';*/
+    echo $Informacion = isset($_POST['Informacion']) ? $_POST['Informacion'] : null;  
+
+    echo $fileNameCurp = $_FILES['curp']['name'];
+    echo $fileSizeCurp = $_FILES['curp']['size'];
+    echo $fileTypeCurp = $_FILES['curp']['type'];
+
+    echo $fileNameDomicilio = $_FILES['domicilio']['name'];
+    echo $fileSizeDomicilio = $_FILES['domicilio']['size'];
+    echo $fileTypeDomicilio = $_FILES['domicilio']['type'];
+
+    echo $fileNameBoleta = $_FILES['boleta']['name'];
+    echo $fileSizeBoleta = $_FILES['boleta']['size'];
+    echo $fileTypeBoleta = $_FILES['boleta']['type'];
+
+    $archivocurp = $_FILES['curp']['name'];
+    $guardar = $_FILES['curp']['tmp_name'];
+    $carpeta = '/documents/$curpAlumno';
+    mkdir($carpeta, 0777, true);
+    if(!file_exists($carpeta)){
+    $destino = $carpeta.$_FILES['curp']['name'];
+    copy($_FILES['curp']['tmp_name'], $destino);
+    echo "Archivo subido exitosamente";
+    }else{
+        echo "Error al subir archivo";
+    }
 
 ?>

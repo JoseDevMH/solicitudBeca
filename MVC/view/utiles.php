@@ -136,7 +136,7 @@
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="localA">Localidad: <span class="campoObligatorio">*</span></label>
               <?php
-                    require_once("Localities.php");
+                    require_once("../model/Localities.php");
                     $locality = New Localities();
                     $matrizLocalities=$locality->getLocality();
                 ?>
@@ -213,7 +213,7 @@
             <div class="form-group col-12">
                 <label class="font-weight-bold" for="nombreEsc">Nombre De La Escuela: <span class="campoObligatorio">*</span></label>
                 <?php
-                    require_once("Schools.php");
+                    require_once("../model/Schools.php");
                     $school = New Schools();
                     $matrizSchools=$school->getSchool();
                 ?>
@@ -237,7 +237,7 @@
             <div class="form-group col-12">
                 <label class="font-weight-bold" for="localA">Localidad: <span class="campoObligatorio">*</span></label>
                 <?php
-                    require_once("Localities.php");
+                    require_once("../model/Localities.php");
                     $locality = New Localities();
                     $matrizLocalities=$locality->getLocality();
                 ?>
@@ -495,8 +495,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="js/app.js"></script>
-
+  <script>
+    $(document).ready(function () {
+      $('#myModal').modal('show')
+    });
+  </script>
   <!--<script src="js/jquery.js"></script>    
     <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>-->
 </body>
