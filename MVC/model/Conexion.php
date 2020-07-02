@@ -9,7 +9,7 @@ class Conexion {
 
   protected $conexionDB;
 
-  public function Conexion(){
+  public function __construct(){
       try{
         $this->conexionDB = new PDO('mysql:host=localhost; dbname=becas', 'root', '');
         $this->conexionDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
