@@ -3,7 +3,7 @@
 
     $aplication = New managmentAplicationObjet();
     $matriz=$aplication->getAplication();
-    echo var_dump ($matriz);
+    var_dump ($matriz);
     /*foreach ($matriz as $item) {
         # code...
         echo "<li>";
