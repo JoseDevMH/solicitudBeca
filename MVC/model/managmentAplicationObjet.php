@@ -9,7 +9,7 @@
         public function getAplication(){
             $sql = "SELECT * FROM aplication";
             $sentencia = $this->conexionDB->prepare($sql);
-            $sentencia->execute(array());
+            $sentencia->execute();
             $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);
             $sentencia->closeCursor();
             //var_dump($resultado);
