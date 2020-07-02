@@ -16,6 +16,10 @@
             return $resultado;
             $this->conexionDB = null;
         }
+
+        public function setAplication(){
+            
+        }
     }
 
 ?>

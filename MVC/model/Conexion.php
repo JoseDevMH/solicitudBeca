@@ -17,7 +17,7 @@ class Conexion {
         return $this->conexionDB;
       }
       catch(Exception $ex){
-        echo "La linea del error es: " . $ex->getLine();
+        echo "La linea del error es: " . $ex->getLine() . $ex->getMessage();
       }
   }
 
