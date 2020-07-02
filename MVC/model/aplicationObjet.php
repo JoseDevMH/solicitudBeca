@@ -18,13 +18,13 @@
         private $score;
         private $idSchool;
         private $idSchoolLocal;
-        //private $dadName;
-        //private $dadEmployment;
-        //private $dadWorkplace;
-        //private $momName;
-        //private $momEmployment;
-        //private $momWorkplace;
-        //private $tutorName;
+        private $dadName;
+        private $dadEmployment;
+        private $dadWorkplace;
+        private $momName;
+        private $momEmployment;
+        private $momWorkplace;
+        private $tutorName;
         //private $tutorEmployment;
         //private $tutorWorkplace;
         //private $whoIncome;
@@ -169,4 +169,60 @@
         function setIdSchoolLocal($idSchoolLocal) {  
             $this->idSchoolLocal = $idSchoolLocal; 
         } 
+
+        function getDadName() { 
+            return $this->dadName; 
+        } 
+
+        function setDadName($dadName) {  
+            $this->dadName = $dadName; 
+        } 
+
+        function getDadEmployment() { 
+            return $this->dadEmployment; 
+        } 
+
+        function setDadEmployment($dadEmployment) {  
+            $this->dadEmployment = $dadEmployment; 
+        } 
+
+        function getDadWorkplace() { 
+            return $this->dadWorkplace; 
+        } 
+
+        function setDadWorkplace($dadWorkplace) {  
+            $this->dadWorkplace = $dadWorkplace; 
+        } 
+
+        function getMomName() { 
+            return $this->momName; 
+        } 
+
+        function setMomName($momName) {  
+            $this->momName = $momName; 
+        } 
+
+        function getMomEmployment() { 
+            return $this->momEmployment; 
+        } 
+
+        function setMomEmployment($momEmployment) {  
+            $this->momEmployment = $momEmployment; 
+        } 
+
+        function getMomWorkplace() { 
+            return $this->momWorkplace; 
+        } 
+
+        function setMomWorkplace($momWorkplace) {  
+            $this->momWorkplace = $momWorkplace; 
+	    } 
+
+        function getTutorName() { 
+            return $this->tutorName; 
+        } 
+
+        function setTutorName($tutorName) {  
+            $this->tutorName = $tutorName; 
+	} 
     }

@@ -35,6 +35,13 @@
                     $aplication->setScore($row["Score"]);
                     $aplication->setIdSchool($row["IdSchool"]);
                     $aplication->setIdSchoolLocal($row["IdSchoolLocal"]);
+                    $aplication->setDadName($row["DadName"]);
+                    $aplication->setDadEmployment($row["DadEmployment"]);
+                    $aplication->setDadWorkplace($row["DadWorkplace"]);
+                    $aplication->setMomName($row["MomName"]);
+                    $aplication->setMomEmployment($row["MomEmployment"]);
+                    $aplication->setMomWorkplace($row["MomWorkplace"]);
+                    $aplication->setTutorName($row["TutorName"]);
                     
 
                     //llenado de la matriz con objetos
@@ -44,7 +51,7 @@
 
                 return $matrizAplicationObject;
 
-                
+
             } catch(Exception $ex){
                 echo "La linea del error es: " . $ex->getLine() . $ex->getMessage();
             }
