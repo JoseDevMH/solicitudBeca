@@ -1,6 +1,5 @@
 <?php
-    require_once("managementAplicationObjet.php");
-
+    require_once("managementAplicationObjet.php");    
     $aplication = New managementAplicationObjet();
     $matriz=$aplication->getAplication();
     var_dump ($matriz);
