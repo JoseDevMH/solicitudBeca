@@ -1,7 +1,7 @@
 <?php
-    require_once("managmentAplicationObjet.php");
+    require_once("managementAplicationObjet.php");
 
-    $aplication = New managmentAplicationObjet();
+    $aplication = New managementAplicationObjet();
     $matriz=$aplication->getAplication();
     var_dump ($matriz);
     /*foreach ($matriz as $item) {
