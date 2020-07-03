@@ -395,13 +395,7 @@
         <div class="card-body">
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="curp">CURP del Estudiante <span class="campoObligatorio">*</span></label>
-            <input type="file" name="curp" class="form-control-file" id="curp" required>
-          </div>
-
-          <div class="form-group">
-            <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses
-              de antigüedad) <span class="campoObligatorio">*</span></label>
-            <input type="file" name="domicilio" class="form-control-file" id="domicilio" required>
+            <input type="file" name="docCurp" class="form-control-file" id="docCurp" required>
           </div>
 
           <div class="form-group">
@@ -409,8 +403,20 @@
               Boleta o constancia con promedio emitida por el sistema educativo donde compruebe que el alumno está
               inscrito <span class="campoObligatorio">*</span>
             </label>
-            <input type="file" name="boleta" class="form-control-file" id="boleta" required>
+            <input type="file" name="docScore" class="form-control-file" id="docScore" required>
           </div>
+
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses
+              de antigüedad) <span class="campoObligatorio">*</span></label>
+            <input type="file" name="proofAddress" class="form-control-file" id="proofAddress" required>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-bold text-uppercase" for="domicilio">Identificacion oficial con fotografía vigente (Credencial para Votar o pasaporte)
+               <span class="campoObligatorio">*</span></label>
+            <input type="file" name="identificationTutor" class="form-control-file" id="identificationTutor" required>
+          </div>          
 
         </div>
       </div>

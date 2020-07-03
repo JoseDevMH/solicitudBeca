@@ -25,20 +25,20 @@
         private $momEmployment;
         private $momWorkplace;
         private $tutorName;
-        //private $tutorEmployment;
-        //private $tutorWorkplace;
-        //private $whoIncome;
-        //private $income;
-        //private $email;
-        //private $phone;
-        //private $phone2;
-        //private $sign;
-        //private $signName;
-        //private $doccurp;
-        //private $docScore;
-        //private $proofAddress;
-        //private $identificationTutor;
-        //private $status;*/
+        private $tutorEmployment;
+        private $tutorWorkplace;
+        private $whoIncome;
+        private $income;
+        private $email;
+        private $phone;
+        private $phone2;
+        private $sign;
+        private $signName;
+        private $docCurp;
+        private $docScore;
+        private $docProofAddress;
+        private $docIdentificationTutor;
+        private $status;
 
       /*Metodos de Acceos las propiedades ###############################*/
 
@@ -223,6 +223,118 @@
         } 
 
         function setTutorName($tutorName) {  
-            $this->tutorName = $tutorName; 
+            $this->tutorName = $tutorName;
 	} 
+
+        function getTutorEmployment() { 
+            return $this->tutorEmployment; 
+        } 
+
+        function setTutorEmployment($tutorEmployment) {  
+            $this->tutorEmployment = $tutorEmployment; 
+        } 
+
+        function getTutorWorkplace() { 
+            return $this->tutorWorkplace; 
+        } 
+
+        function setTutorWorkplace($tutorWorkplace) {  
+            $this->tutorWorkplace = $tutorWorkplace; 
+        } 
+
+        function getWhoIncome() { 
+            return $this->whoIncome; 
+        } 
+
+        function setWhoIncome($whoIncome) {  
+            $this->whoIncome = $whoIncome; 
+        } 
+
+        function getIncome() { 
+            return $this->income; 
+        } 
+
+        function setIncome($income) {  
+            $this->income = $income; 
+        } 
+
+        function getEmail() { 
+            return $this->email; 
+        } 
+
+        function setEmail($email) {  
+            $this->email = $email; 
+        }        
+
+        function getPhone() { 
+            return $this->phone; 
+        } 
+
+        function setPhone($phone) {  
+            $this->phone = $phone; 
+        } 
+
+        function getPhone2() { 
+            return $this->phone2; 
+        } 
+
+        function setPhone2($phone2) {  
+            $this->phone2 = $phone2; 
+	    } 
+
+        function getSign() { 
+            return $this->sign; 
+        } 
+
+        function setSign($sign) {  
+            $this->sign = $sign; 
+        } 
+
+        function getSignName() { 
+            return $this->signName; 
+        } 
+
+        function setSignName($signName) {  
+            $this->signName = $signName; 
+        } 
+
+        function getDocCurp() { 
+            return $this->docCurp; 
+        } 
+
+        function setDocCurp($docCurp) {  
+            $this->docCurp = $docCurp; 
+        } 
+
+        function getDocScore() { 
+            return $this->docScore; 
+        } 
+
+        function setDocScore($docScore) {  
+            $this->docScore = $docScore; 
+        } 
+
+        function getDocProofAddress() { 
+            return $this->docProofAddress; 
+        } 
+
+        function setDocProofAddress($docProofAddress) {  
+            $this->docProofAddress = $docProofAddress; 
+        } 
+
+        function getDocIdentificationTutor() { 
+            return $this->docIdentificationTutor; 
+        } 
+
+        function setDocIdentificationTutor($docIdentificationTutor) {  
+            $this->docIdentificationTutor = $docIdentificationTutor; 
+        } 
+
+        function getStatus() { 
+            return $this->status; 
+        } 
+
+        function setStatus($status) {  
+            $this->status = $status; 
+        } 
     }
