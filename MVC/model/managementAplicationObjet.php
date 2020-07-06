@@ -85,7 +85,7 @@
                 $sentencia = $this->conexionDB->prepare($sql);
                 $sentencia->execute();
             } catch(Exception $ex){
-                echo "La linea del error es: " . $ex->getLine() . $ex->getMessage();
+                Die ("Error: " . $ex->getLine() . $ex->getMessage());
             }
         }
     }

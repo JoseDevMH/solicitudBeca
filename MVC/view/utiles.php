@@ -35,7 +35,7 @@
               <div class="form-group">
                 <label class="font-weight-bold" for="segApellido">Segundo Apellido: <span class="campoObligatorio">*</span></label>
                 <input type="text" class="form-control" placeholder="Segundo Apellido" id="segApellido"
-                  name="segundoApellidoAlumno" maxlength="50" required>
+                  name="segundoApellidoAlumno" maxlength="50" >
               </div>
             </div>
           </div>
@@ -72,6 +72,7 @@
               <input type="text" class="form-control" id="colA" maxlength="40" placeholder="Nombre de la colonia"
                 name="ColoniaAlumno" required>
             </div>
+            
             <div class="form-group col-md-6">
               <label class="font-weight-bold" for="localA">Localidad: <span class="campoObligatorio">*</span></label>
               <?php
@@ -117,7 +118,7 @@
             </div>
             <div class="form-group col-md-3">
               <label class="font-weight-bold" for="localE">Grado de escuela: <span class="campoObligatorio">*</span></label>
-              <select id="datoF" class="form-control" name="Grado" required>
+              <select id="datoF" class="form-control" name="Grado" >
                 <option selected>Selecciona</option>
                 <option value="2">2do. de primaria</option>
                 <option value="3">3ro. de primaria</option>
@@ -143,7 +144,7 @@
             <div class="form-group col-md-3">
               <label class="font-weight-bold" for="promedio">Promedio: <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" id="promedio" placeholder="Promedio actual" name="Promedio"
-                maxlength="5" required>
+                maxlength="5" >
             </div>
           </div>
           
@@ -157,7 +158,7 @@
                 ?>
 
                 <!--//Inicio del select ////////////////////////////-->
-                <select id="datoF" class="form-control" name="Escuela" required>
+                <select id="datoF" class="form-control" name="Escuela" >
                 <option selected>Selecciona Tu Escuela</option>
 
                 <?php 
@@ -181,7 +182,7 @@
                 ?>
                 
                 <!--//Inicio del select ////////////////////////////-->
-                <select id="datoF" class="form-control" name="LocalidadEscuela" required>
+                <select id="datoF" class="form-control" name="LocalidadEscuela" >
                 <option selected>Lugar donde esta tu escuela</option>
 
                 <?php 
@@ -289,7 +290,7 @@
             <div class="form-group col-md-3">
               <label class="font-weight-bold" for="telA">Teléfono <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" maxlength="10" id="telA" placeholder="Número telefónico"
-                name="Telefono" required>
+                name="Telefono" >
             </div>
             <div class="form-group col-md-3">
               <label class="font-weight-bold" for="tel2">Teléfono adicional</label>
@@ -317,7 +318,7 @@
             <div class="form-group col-md-7">
               <label class="font-weight-bold" for="dato">Nombre de quien da la Información <span class="campoObligatorio">*</span></label>
               <input type="text" class="form-control" maxlength="80" id="dato" placeholder="Nombre completo"
-                name="NombreQuienDaInformacion" required>
+                name="NombreQuienDaInformacion" >
             </div>
           </div>
         </div>
@@ -333,7 +334,7 @@
         <div class="card-body">
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="curp">CURP del Estudiante <span class="campoObligatorio">*</span></label>
-            <input type="file" name="docCurp" class="form-control-file" id="docCurp" required>
+            <input type="file" name="docCurp" class="form-control-file" id="docCurp">
           </div>
 
           <div class="form-group">
@@ -341,19 +342,19 @@
               Boleta o constancia con promedio emitida por el sistema educativo donde compruebe que el alumno está
               inscrito <span class="campoObligatorio">*</span>
             </label>
-            <input type="file" name="docScore" class="form-control-file" id="docScore" required>
+            <input type="file" name="docScore" class="form-control-file" id="docScore">
           </div>
 
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="domicilio">Comprobante de domicilio (NO mayor a 3 meses
               de antigüedad) <span class="campoObligatorio">*</span></label>
-            <input type="file" name="proofAddress" class="form-control-file" id="proofAddress" required>
+            <input type="file" name="proofAddress" class="form-control-file" id="proofAddress">
           </div>
 
           <div class="form-group">
             <label class="font-weight-bold text-uppercase" for="domicilio">Identificacion oficial con fotografía vigente (Credencial para Votar o pasaporte)
                <span class="campoObligatorio">*</span></label>
-            <input type="file" name="identificationTutor" class="form-control-file" id="identificationTutor" required>
+            <input type="file" name="identificationTutor" class="form-control-file" id="identificationTutor">
           </div>          
 
         </div>

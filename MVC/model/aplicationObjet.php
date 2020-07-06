@@ -40,6 +40,7 @@
         private $docIdentificationTutor;
         private $status;
 
+
       /*Metodos de Acceos las propiedades ###############################*/
 
         function getId() { 
@@ -121,6 +122,8 @@
         function setIdLocality($idLocality) {  
             $this->idLocality = $idLocality; 
         } 
+
+        /*###########################################*/
 
         function getLevel() { 
             return $this->level; 
@@ -337,4 +340,6 @@
         function setStatus($status) {  
             $this->status = $status; 
         } 
+
+	 
     }
