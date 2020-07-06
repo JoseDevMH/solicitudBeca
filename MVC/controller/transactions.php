@@ -207,7 +207,8 @@
         }
     }
     else {
-        echo "Error El directorio no se creó";
+        echo "Error El directorio no se creó, probablemente ya exista y una solicitu de la curp: " . $dircurp;
+        echo "Puedes reportar al correo educacion@juventinorosas.gob.mx o llevar fisicamente la documentacion a la Coordinación de Educación";
     }     
 
     
