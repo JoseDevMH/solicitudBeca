@@ -4,6 +4,10 @@
 
     echo $dircurp = $_POST['CurpAlumno'];
     echo "<br />";
+    //Path de la carpeta destino del Server
+    echo $target_dir = $_SERVER['DOCUMENT_ROOT'] . '/SolicitudBeca/MVC/view/uploads/' . $dircurp . '/';
+    echo "<br />";
+
     echo $nameCurp = $_FILES['docCurp']['name'];
     echo "<br />";
     echo $typeCurp = $_FILES['docCurp']['type'];
@@ -12,33 +16,81 @@
     echo "<br />";
     echo $tmpNameCurp = $_FILES['docCurp']['tmp_name'];
     echo "<br />";
-
-
-    //Path de la carpeta destino del Server
-    echo $target_dir = $_SERVER['DOCUMENT_ROOT'] . '/SolicitudBeca/MVC/view/uploads/' . $dircurp . '/';
+    
+    echo $nameScore = $_FILES['docScore']['name'];
     echo "<br />";
-    echo $target_file = $target_dir . basename($nameCurp);
+    echo $typeScore = $_FILES['docScore']['type'];
+    echo "<br />";
+    echo $sizeScore = $_FILES['docScore']['size'];
+    echo "<br />";
+    echo $tmpNameScore = $_FILES['docScore']['tmp_name'];
+    echo "<br />";
+
+    echo $nameProofAddress = $_FILES['proofAddress']['name'];
+    echo "<br />";
+    echo $typeProofAddress = $_FILES['proofAddress']['type'];
+    echo "<br />";
+    echo $sizeProofAddress = $_FILES['proofAddress']['size'];
+    echo "<br />";
+    echo $tmpNameProofAddress = $_FILES['proofAddress']['tmp_name'];
+    echo "<br />";
+
+    echo $nameIdentificationTutor = $_FILES['identificationTutor']['name'];
+    echo "<br />";
+    echo $typeIdentificationTutor = $_FILES['identificationTutor']['type'];
+    echo "<br />";
+    echo $sizeIdentificationTutor = $_FILES['identificationTutor']['size'];
+    echo "<br />";
+    echo $tmpNameIdentificationTutor = $_FILES['identificationTutor']['tmp_name'];
+    echo "<br />";
+    
+    echo $target_file_curp = $target_dir . basename($nameCurp);
+    echo "<br />";
+    echo $target_file_score = $target_dir . basename($nameScore);
+    echo "<br />";
+    echo $target_file_proofAddress = $target_dir . basename($nameProofAddress);
+    echo "<br />";
+    echo $target_file_identificationTutor = $target_dir . basename($nameIdentificationTutor);
     echo "<br />";
     echo $uploadOk = 1;
     echo "<br />";
-    echo $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    echo $fileTypeCurp = strtolower(pathinfo($target_file_curp,PATHINFO_EXTENSION));
+    echo "<br />";
+    echo $fileTypeScore = strtolower(pathinfo($target_file_score,PATHINFO_EXTENSION));
+    echo "<br />";
+    echo $fileTypeProofAddress = strtolower(pathinfo($target_file_proofAddress,PATHINFO_EXTENSION));
+    echo "<br />";
+    echo $fileTypeIdentificationTutor = strtolower(pathinfo($target_file_identificationTutor,PATHINFO_EXTENSION));
     echo "<br />";
     echo "ruta en la DB";
-    echo $targetDB = $dircurp. '/' .basename($nameCurp);
+    echo $targetDB_curp = $dircurp. '/' .basename($nameCurp);
+    echo $targetDB_score = $dircurp. '/' .basename($nameScore);
+    echo $targetDB_proof = $dircurp. '/' .basename($nameProofAddress);
+    echo $targetDB_identification = $dircurp. '/' .basename($nameIdentificationTutor);
+
+    
+
 
     //Crear directorio para carga de documentos
     if (mkdir($target_dir, 0700)==1){
         echo "Directorio creado correctamente";
+        //mover el archivo del directorio temporal en el SERVER donde se carga por primera vez el archivo
+        //a el directorio que en definitiva va a estar        
+        move_uploaded_file($tmpNameCurp, $target_file_curp);
+        move_uploaded_file($tmpNameScore, $target_file_score);
+        move_uploaded_file($tmpNameProofAddress, $target_file_proofAddress);
+        move_uploaded_file($tmpNameIdentificationTutor, $target_file_identificationTutor);
     }
     else {
         echo "Error El directorio no se creó";
     }
 
-    //mover el archivo del directorio temporal en el SERVER donde se carga por primera vez el archivo
-    //a el directorio que en definitiva va a estar
+    
 
-    if(move_uploaded_file($tmpNameCurp, $target_file)==1)
-    {
+    
+
+    
+    
         try {
             //---------------- Información de Alumno -----------------------------------
             echo $nombreAlumno = htmlentities(addslashes(trim($_POST['nombreAlumno'])), ENT_QUOTES);
@@ -148,7 +200,10 @@
             $aplication->setPhone2($telefonoAdicional);
             $aplication->setSign($quienDaInformacion);
             $aplication->setSignName($nombreQuienDaInformacion);
-            $aplication->setDocCurp($targetDB);
+            $aplication->setDocCurp($targetDB_curp);
+            $aplication->setDocScore($targetDB_score);
+            $aplication->setDocProofAddress($targetDB_proof);
+            $aplication->setDocIdentificationTutor($targetDB_identification);
             $aplication->setStatus($status);
             
             
@@ -160,37 +215,4 @@
         }catch(Exception $ex){
             echo "Error Transaction: " . $ex->getLine() . $ex->getMessage();
         }
-    }else
-    {
-        Echo "no se pudo cargar el archivo, no se guardo rigistros en la BD";
-    }
-
-        
-            
-        
-
-        
-    
-
-    
-    /*
-
-    
-
-    
-
-
-
-
-    
-
-
-    // ---------------- Documentos requeridos------------------------------------
-    echo $nameCurp = $_FILES['docCurp']['name'];
-    echo $typeCurp = $_FILES['docCurp']['type'];
-    echo $sizeCurp = $_FILES['docCurp']['size'];*/
-
-       
-
-
 ?>
