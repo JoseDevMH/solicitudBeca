@@ -3,6 +3,7 @@
     class aplicationObjet
     {
         private $id;
+        private $dateAplication;
         private $name;
         private $firstLastName;
         private $secondLastName;
@@ -49,6 +50,14 @@
 
         function setId($id) {  
             $this->id = $id; 
+        } 
+
+        function getDateAplication() { 
+                return $this->dateAplication; 
+        } 
+    
+        function setDateAplication($dateAplication) {  
+            $this->dateAplication = $dateAplication; 
         } 
 
         function getName() { 
@@ -341,5 +350,5 @@
             $this->status = $status; 
         } 
 
-	 
+	
     }
