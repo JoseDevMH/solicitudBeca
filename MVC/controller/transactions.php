@@ -80,17 +80,7 @@
         move_uploaded_file($tmpNameScore, $target_file_score);
         move_uploaded_file($tmpNameProofAddress, $target_file_proofAddress);
         move_uploaded_file($tmpNameIdentificationTutor, $target_file_identificationTutor);
-    }
-    else {
-        echo "Error El directorio no se creó";
-    }
 
-    
-
-    
-
-    
-    
         try {
             //---------------- Información de Alumno -----------------------------------
             echo $nombreAlumno = htmlentities(addslashes(trim($_POST['nombreAlumno'])), ENT_QUOTES);
@@ -215,4 +205,12 @@
         }catch(Exception $ex){
             echo "Error Transaction: " . $ex->getLine() . $ex->getMessage();
         }
+    }
+    else {
+        echo "Error El directorio no se creó";
+    }     
+
+    
+    
+        
 ?>
