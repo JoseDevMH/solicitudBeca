@@ -16,9 +16,16 @@
             <th scope="col">Nombre</th>
             <th scope="col">Primer Apellido</th>
             <th scope="col">Segundo Apellido</th>
+            <th scope="col">Edad</th>
             <th scope="col">CURP</th>
+            <th scope="col">Calle</th>
+            <th scope="col">Número Exterior</th>
+            <th scope="col">Nivel</th>
+            <th scope="col">Grado</th>
+            <th scope="col">Promedio</th>
             <th scope="col">Escuela</th>
             <th scope="col">Localidad</th>
+            <th scope="col">Ingresos</th>
             <th scope="col"></th>
             </tr>
         </thead>
@@ -41,9 +48,17 @@
                 echo '<td>' . $item->getName() . '</td>';
                 echo '<td>' . $item->getFirstLastName() . '</td>';
                 echo '<td>' . $item->getSecondLastName() . '</td>';
+                echo '<td>' . $item->getEdadAlumno() . '</td>';
                 echo '<td>' . $item->getCurp() . '</td>';
+                echo '<td>' . $item->getCalle() . '</td>';
+                echo '<td>' . $item->getNumero() . '</td>';
+                echo '<td>' . $item->getColoniaAlumno() . '</td>';
+                echo '<td>' . $item->getIdNivel() . '</td>';
+                echo '<td>' . $item->getIdGrado() . '</td>';
+                echo '<td>' . $item->getIdPromedio() . '</td>';
                 echo '<td>' . $item->getIdSchool() . '</td>';
                 echo '<td>' . $item->getIdLocality() . '</td>';
+                echo '<td>' . $item->getIdIngresos() . '</td>';
                 echo '<td><a class="linkNaranja" href="getAplication.php?Id=' . $item->getId() . '"> Ver más </a></td>';
                 echo "</tr>";
                
