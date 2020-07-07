@@ -26,9 +26,17 @@
                 $nombre = $item->getName();
                 $primerApellido = $item->getFirstLastName();
                 $segundoApellido = $item->getSecondLastName();
+                $Edad = $item->getEdadAlumno();
                 $curp = $item->getCurp();
+                $Calle = $item->getCalle();
+                $Numero = $item->getNumero();
+                $Colonia = $item->getColoniaAlumno();
+                $Nivel = $item->getIdNivel();
+                $Grade = $item->getIdGrado();
+                $Score = $item->getIdPromedio();
                 $escuela = $item->getIdSchool();
                 $localidad = $item->getIdLocality();
+                $Income = $item->getIdIngresos();
                 
             
             }
@@ -67,7 +75,7 @@
                             <div class="col-md-3">
                             <div class="form-group">
                                 <label class="font-weight-bold" for="edadA">Edad: </label>
-                                <?php echo $primerApellido; ?>
+                                <?php echo $Edad; ?>
                             </div>
                             </div>
                             <div class="col-md-9">
@@ -80,23 +88,41 @@
                         <div class="row">
                             <div class="form-group col-9">
                             <label class="font-weight-bold" for="calle">Calle: </label>
-                            <?php echo $primerApellido; ?>
+                            <?php echo $Calle; ?>
                             </div>
                             <div class="form-group col-3">
                             <label class="font-weight-bold" for="num_exA">Número Exterior: </label>
-                            <?php echo $primerApellido; ?>
+                            <?php echo $Numero; ?>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                             <label class="font-weight-bold" for="colA">Colonia:</label>
-                            <?php echo $primerApellido; ?>
+                            <?php echo $Colonia; ?>
                             </div>
                             
                             <div class="form-group col-md-6">
                             <label class="font-weight-bold" for="localA">Localidad: </label>
                             <?php echo $localidad; ?>
                                 <!--//fin del select ////////////////////////////-->              
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-3">
+                            <label class="font-weight-bold" for="calle">Nivel: </label>
+                            <?php echo $Nivel; ?>
+                            </div>
+                            <div class="form-group col-3">
+                            <label class="font-weight-bold" for="num_exA">Grado: </label>
+                            <?php echo $Grade; ?>
+                            </div>
+                            <div class="form-group col-3">
+                            <label class="font-weight-bold" for="num_exA">Promedio: </label>
+                            <?php echo $Score; ?>
+                            </div>
+                            <div class="form-group col-3">
+                            <label class="font-weight-bold" for="num_exA">Ingresos: </label>
+                            <?php echo $Income; ?>
                             </div>
                         </div>
                         </div>
